@@ -1,0 +1,51 @@
+html {
+  background: white;
+  box-sizing: border-box;
+  min-height: 100%;
+  border: #FF0000 15px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0;
+}
+
+u.dotted{
+  border-bottom: 2px dotted #000000;
+  text-decoration: none; 
+}
+
+table, th, td {
+
+	border: 1px solid black ;
+      text-align: center;
+       }
+
+table.wide {
+    display: block;
+    overflow-x: auto;
+	border: 1px solid black ;
+      text-align: center;
+}
+
+
+.roster {
+    table-layout: fixed ;
+    width: 400px;
+}
+
+tr.canceled {
+	background-color: LightGray;
+}
+
+tr.unconfirmed {
+	background-color: LightCoral;
+}
+
+tr.uncounted {
+	background-color: LemonChiffon;
+}
+
+.invisible {
+	border: 0;
+	vertical-align: top;
+	text-align: left;
+}

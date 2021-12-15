@@ -1,0 +1,24 @@
+[X] Days since previous schedule tells you how many days came between any two things on the chart, be it a game played, canceled, or unconfirmed
+	This tells you the length between attempts at a game, succesful or not
+[X] Days since previous game tells you how many days came between any two games that were both played, BOTH counted or not counted AND confirmed or unconfirmed, AS LONG AS a game was played
+	This tells you the length between games played, confirmed or not
+[X] Days since previous counted game tells you how many days came between any two games that were both played, IF both games are counted.  Unconfirmed but counted games ARE included
+	This tells you the length between games played that are included in NC State's official game list using estimated dates for games with unknown dates
+[X] Days since previous confirmed game tells you how many days came between any two games that were both played, IF both games are confirmed.  Games do NOT need to be counted
+	This tells you the length between CONFIRMED games played, even if they are NOT included in NC State's official game list
+[X] Days since previous C & C game tells you how many days came between any two games that were both played, IF both games are counted AND confirmed.
+	This tells you the length between CONFIRMED games that ARE included in NC State's official game list.
+
+explanation:
+
+Light red on the date signifies an unconfirmed game
+
+Orange signifies the days passed are non-continues
+	the bolded number is the number of days between the counted game and the most recently played game
+	the non-bolded number is the number of days between the non-counted game and the game preceding it
+
+Yellow signifies the dates are based on an estimation of a game of an unknown date that was arbitrarily picked to take place on December 31st
+	the italicized number is the number of days between the game of an unknown date and the game following it
+	the non-italicized number is the number of days between the game of an unknown date and the game preceding it
+
+Highlights to DAYS SINCE PREV COUNTED GAME, DAYS SINCE PREV CONFIRMED GAME, and DAYS SINCE PREV C & C GAME refer to differences between that column and DAYS SINCE PREV GAME
