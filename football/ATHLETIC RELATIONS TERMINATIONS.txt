@@ -98,3 +98,5 @@ Virginia
 1908	https://www.newspapers.com/image/79901289/?terms=intercollegiate%20%22V.%20P.%20I.%22&match=1
 	https://www.newspapers.com/image/616504991/?terms=%22north%20carolina%22%20farmers%20vanderbilt%20schedule&match=1
 	https://www.newspapers.com/image/616502740/?terms=%22V.%20P.%20I.%22%20football&match=1
+
+break briefly 1926-1927 https://d.lib.ncsu.edu/collections/catalog/ua010_200-001-bx0012-v9-002#?c=&m=&s=&cv=5&xywh=5748%2C2134%2C2965%2C1733
