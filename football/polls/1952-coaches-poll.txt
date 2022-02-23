@@ -19,8 +19,7 @@ T-13. Pennsylvania
 17. Washington State
 18. Princeton
 19. Duke
-T-20. Duke
- -- . Syracuse
+T-20. Syracuse
  -- . Virginia
 Others Receiving Votes: Kentucky, Arizona State, Holy Cross, Clemson, Tulsa, Alabama, Mississippi, Ohio State, Louisiana State, Rice, Wyoming
 
