@@ -11,7 +11,7 @@ Sep 27 1955 - https://www.newspapers.com/clip/96810537/1955-09-27-coaches-poll/ 
 6. UCLA
 7. Army
 8. Southern California
-9. Texas Christian
+9. Texas Christian (1)
 10. Ohio State
 11. Rice
 12. Pittsburgh
@@ -33,7 +33,7 @@ Oct 4 1955 - https://www.newspapers.com/clip/96810606/1955-10-04-coaches-poll/
 2. Michigan (6)
 3. Oklahoma (5)
 4. Georgia Tech (3)
-5. Notre Dame (3)
+5. Notre Dame
 6. Army
 7. Texas Christian (1)
 8. UCLA

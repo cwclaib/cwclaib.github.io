@@ -86,7 +86,7 @@ Oct 15 1957 - https://www.newspapers.com/clip/97050053/1957-10-15-coaches-poll/
 6. Duke (1)
 7. Oregon State
 8. Notre Dame
-9. Arkansas
+9. Arkansas (1)
 10. Auburn
 11. Mississippi
 12. Wisconsin
@@ -109,9 +109,9 @@ Oct 22 1957 - https://www.newspapers.com/clip/97050222/1957-10-22-coachespoll/
 4. Duke (1)
 5. Notre Dame
 6. Auburn
-7. Michigan State
+7. Michigan State (1)
 8. Army
-9. Mississippi
+9. Mississippi (1)
 10. Ohio State
 11. Rice
 T-12. Minnesota
@@ -134,7 +134,7 @@ Oct 29 1957 - https://www.newspapers.com/clip/97050407/1957-10-29-coaches-poll/
 3. Iowa (1)
 4. Auburn (4)
 5. Notre Dame
-6. Michigan State
+6. Michigan State (3)
 7. Duke (1)
 8. Army
 9. Ohio State
@@ -246,7 +246,7 @@ Nov 26 1957 - https://www.newspapers.com/clip/97051236/1957-11-26-coaches-poll/
 10. Rice
 11. Notre Dame
 12. Wisconsin
-13. Arizona State
+13. Arizona State (1)
 14. North Carolina State
 T-15. Duke
  -- . Texas
