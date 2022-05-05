@@ -25,3 +25,7 @@ pre {
             white-space: -o-pre-wrap;
             word-wrap: break-word;
          }
+
+ol > ol {
+	list-style-type: lower-alpha;
+}
