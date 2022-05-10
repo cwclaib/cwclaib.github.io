@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Non-Barbecue Pictures</title>
+	<style>
+	#image {
+            display: none;
+        }
+	</style>
+</head>
+
+<center>
+	<h2>Non-Barbecue Pictures</h2>
+</center>
+
+
+<p>To help reduce the load time of this page, all images are automatically hidden.  To show the image, click the button that says "Show Image."  There may be some delay before the picture actually loads.</p>
+
+<br>
+
+<h3>Betsey's Ole Country Store - Collettsville</h3>
+<p><a id="Betseys"></p>
+<center><img id="image8" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Betsey's Ole Country Store, Collettsville/20220507_113130.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image8, this )" id="btnID">
+        Show Image
+</button></center>
+<center><img id="image10" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Betsey's Ole Country Store, Collettsville/20220507_113135.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image10, this )" id="btnID">
+        Show Image
+</button></center>
+
+<br>
+
+<h3>Coffey's General Store - Collettsville</h3>
+<p><a id="Coffeys"></p>
+<center><img id="image9" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Coffey's General Store, Collettsville/20220507_113946.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image9, this )" id="btnID">
+        Show Image
+</button></center>
+
+<br>
+
+<h3>Mountain Top Trading Post - Mountain Rest, SC</h3>
+<p>(<i>NOTE: address is 5251 Hwy 28 S, Mountain Rest, SC - The name in Google Maps (Mountain Rest Trading Post) is incorrect.</i>)</p>
+<p><a id="Mountain-Rest"></p>
+<center><img id="image1" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Mountain Top Trading Post, Mountain Rest SC/mtnrest.JPG" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image1, this )" id="btnID">
+        Show Image
+</button></center>
+
+<br>
+
+<h3>S&ampT Soda Shop - Pittsboro</h3>
+<p><a id="S-T-Soda"></p>
+<center><img id="image2" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/S_T_s Soda Shop, Pittsboro/20220205_125304.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image2, this )" id="btnID">
+        Show Image
+</button></center>
+<center><img id="image3" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/S_T_s Soda Shop, Pittsboro/20220205_125500.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image3, this )" id="btnID">
+        Show Image
+</button></center>
+
+<br>
+
+<h3>Wilson Creek Trading Post - Collettsville</h3>
+<p><a id="Wilson-Creek"></p>
+<center><img id="image4" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Wilson Creek Trading Post, Collettsville/20220409_134827.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image4, this )" id="btnID">
+        Show Image
+</button></center>
+
+<br>
+
+<h3>Wink's Country Cooking - Albemarle</h3>
+<p><a id="Winks"></p>
+<center><img id="image5" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Winks Country Cooking, Albemarle/20220506_081505.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image5, this )" id="btnID">
+        Show Image
+</button></center>
+<center><img id="image6" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Winks Country Cooking, Albemarle/20220506_081907.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image6, this )" id="btnID">
+        Show Image
+</button></center>
+<center><img id="image7" img-src="https://s3.us-east-1.wasabisys.com/cwclaib-website/NC-State-Page/bbq/Winks Country Cooking, Albemarle/20220506_083112.jpg" width="800"></img></center>
+<center><button type="button"
+        onclick="show( image7, this )" id="btnID">
+        Show Image
+</button></center>
+
+
+<script>
+	function show( img, btn ) {
+		console.log( img )
+		img.src = img.getAttribute( "img-src" );
+		img.style.display = "block";
+		btn.style.display = "none";
+    }
+</script>
+
+<style>
+body {
+  background: #ffecb3;
+  box-sizing: border-box;
+  min-height: 100%;
+  border: #ffecb3; 15px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0;
+}
+
+.ncbsbbq {
+	color:orange
+}
+.annualbbq {
+	color:mediumpurple
+}
+</style>
