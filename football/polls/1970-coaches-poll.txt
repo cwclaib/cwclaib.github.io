@@ -4,14 +4,14 @@ no pre-season poll
 Sep 14 1970 - no poll
 
 
-Sep 21 1970
+Sep 22 1970* - https://www.newspapers.com/clip/104527811/1970-09-22-coaches-poll/
 
-1. Texas
-2. Ohio State
-3. Penn State
-4. Stanford
-5. Southern California
-6. Missouri
+1. Texas (22)
+2. Ohio State (1)
+3. Penn State (9)
+4. Stanford (1)
+5. Southern California (1)
+6. Missouri (1)
 7. Mississippi
 8. Nebraska
 9. Notre Dame
@@ -27,14 +27,17 @@ T-16. Colorado
 T-19. West Virginia
  -- . Auburn
  -- . Washington
+Others Receiving Votes: Air Force, Arizona State, Georgia Tech, San Diego State, South Carolina, Texas A&M
+
+* The poll distributed by the UPI (see https://www.newspapers.com/clip/104526491/1970-09-22-coaches-poll/) seems to have had a typo, as every poll seen showed Ohio State having only 1 first place vote rather than 11.  An explanatory excerpt published alongside the top 20 list in many papers  (see https://www.newspapers.com/clip/104527201/1970-09-22-coaches-poll-first-place/) explained in long form that Texas earned 22 votes, while Ohio State earned 11 (and not 1).  This solves one problem and creates another: The poll now has 36 total first place votes rather than 26.  Probably, either Texas or Ohio State earned one less vote than credited, but's it's hard to say for certain.  The poll referenced at the top disagrees with both the main published poll and the long form description, but represents the only version of the poll found with 35 first-place votes represented.
 
 
-Sep 28 1970
+Sep 29 1970 - https://www.newspapers.com/clip/104528029/1970-09-29-coaches-poll/
 
-1. Ohio State
-2. Texas
-3. Notre Dame
-4. Southern California
+1. Ohio State (17)
+2. Texas (16)
+3. Notre Dame (1)
+4. Southern California (1)
 5. Stanford
 6. Nebraska
 7. Colorado
@@ -51,15 +54,16 @@ T-17. West Virginia
  -- . Penn State
 19. Alabama
 20. San Diego State
+Others Receiving Votes: N/A
 
 
-Oct 5 1970
+Oct 6 1970 - https://www.newspapers.com/clip/104528216/1970-10-06-coaches-poll/
 
-1. Ohio State
-2. Texas
-3. Notre Dame
-4. Southern California
-5. Nebraska
+1. Ohio State (18)
+2. Texas (9)
+3. Notre Dame (4)
+4. Southern California (3)
+5. Nebraska (1)
 6. Mississippi
 7. Air Force
 8. Michigan
@@ -75,14 +79,15 @@ T-13. UCLA
 18. Colorado
 19. Oklahoma
 20. San Diego State
+Others Receiving Votes: N/A
 
 
-Oct 12 1970
+Oct 13 1970 - https://www.newspapers.com/clip/104528318/1970-10-13-coaches-poll/
 
-1. Ohio State
-2. Texas
-3. Notre Dame
-4. Nebraska
+1. Ohio State (18)
+2. Texas (13)
+3. Notre Dame (3)
+4. Nebraska (1)
 5. Mississippi
 6. Air Force
 7. Michigan
@@ -99,18 +104,19 @@ T-15. Tennessee
  -- . UCLA
 T-19. San Diego State
  -- . West Virginia
+Others Receiving Votes: N/A
 
 
-Oct 19 1970
+Oct 20 1970 - https://www.newspapers.com/clip/104528396/1970-10-20-coaches-poll/
 
-1. Ohio State
-2. Texas
-3. Notre Dame
-4. Nebraska
+1. Ohio State (14)
+2. Texas (14)
+3. Notre Dame (5)
+4. Nebraska (1)
 5. Auburn
 6. Air Force
 7. Michigan
-8. Stanford
+8. Stanford (1)
 9. Arkansas
 10. Arizona State
 11. Southern California
@@ -121,16 +127,16 @@ Oct 19 1970
 16. UCLA
 T-17. Louisiana State
  -- . Toledo
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 26 1970
+Oct 27 1970* - https://www.newspapers.com/clip/104528626/1970-10-27-coaches-poll/
 
-1. Ohio State
-2. Texas
-3. Notre Dame
-4. Nebraska
+1. Ohio State (17)
+2. Texas (10)
+3. Notre Dame (3)
+4. Nebraska (3)
 5. Michigan
 6. Stanford
 7. Air Force
@@ -146,15 +152,18 @@ T-16. UCLA
  -- . Yale
 T-18. Dartmouth
  -- . Toledo
-20. 
+ -- . Pittsburgh
+Others Receiving Votes: N/A
+
+* Only 33 of 35 coaches participated in voting this week
 
 
-Nov 2 1970
+Nov 3 1970* - https://www.newspapers.com/clip/104528794/1970-11-03-coaches-poll/
 
-1. Texas
-2. Notre Dame
-3. Ohio State
-4. Nebraska
+1. Texas (18)
+2. Notre Dame (7)
+3. Ohio State (7)
+4. Nebraska (2)
 5. Stanford
 6. Michigan
 7. Air Force
@@ -170,15 +179,17 @@ Nov 2 1970
 T-17. Toledo
  -- . Houston
  -- . Alabama
-20. 
+20. N/A
+
+* Only 34 of 35 coaches participated in voting this week
 
 
-Nov 9 1970
+Nov 10 1970 - https://www.newspapers.com/clip/104530007/1970-11-10-coaches-poll/
 
-T-1. Notre Dame
- - . Texas
-3. Ohio State
-4. Nebraska
+T-1. Notre Dame (13)
+ - . Texas (13)
+3. Ohio State (7)
+4. Nebraska (2)
 5. Michigan
 6. Stanford
 7. Auburn
@@ -194,16 +205,16 @@ T-15. Southern California
 T-17. UCLA
  -- . San Diego State
 19. Toledo
-20. 
+20. N/A
 
 
-Nov 16 1970
+Nov 17 1970 - https://www.newspapers.com/clip/104530099/1970-11-17-coaches-poll/
 
-1. Texas
-2. Notre Dame
-3. Nebraska
-4. Ohio State
-5. Michigan
+1. Texas (20)
+2. Notre Dame (6)
+3. Nebraska (6)
+4. Ohio State (1)
+5. Michigan (2)
 6. Arkansas
 7. Louisiana State
 8. Air Force
@@ -217,16 +228,16 @@ T-14. San Diego State
 T-16. Alabama
  -- . Southern California
 18. Toledo
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Nov 23 1970
+Nov 24 1970 - https://www.newspapers.com/clip/60978620/19701124-college-football-polls/
 
-1. Texas
-2. Ohio State
-3. Notre Dame
-4. Nebraska
+1. Texas (18)
+2. Ohio State (6)
+3. Notre Dame (4)
+4. Nebraska (5)
 5. Tennessee
 6. Arkansas
 7. Michigan
@@ -243,13 +254,14 @@ T-16. Toledo
  -- . Air Force
 T-19. San Diego State
  -- . Florida State
+Others Receiving Votes: Colorado
 
 
-Nov 30 1970
+Dec 1 1970* - https://www.newspapers.com/clip/104531895/1970-12-01-coaches-poll/
 
-1. Texas
-2. Ohio State
-3. Nebraska
+1. Texas (24)
+2. Ohio State (5)
+3. Nebraska (4)
 4. Tennessee
 5. Arkansas
 6. Notre Dame
@@ -258,8 +270,8 @@ Nov 30 1970
 9. Arizona State
 10. Auburn
 11. Stanford
-12. Dartmouth
-13. 
+12. Air Force
+13. Dartmouth
 14. Houston
 15. Mississippi
 T-16. Toledo
@@ -267,14 +279,17 @@ T-16. Toledo
  -- . Colorado
  -- . UCLA
 20. Georgia Tech
+Others Receiving Votes: Washington
+
+* Only 33 of 35 coaches participated in voting this week
 
 
 
-Dec 7 1970
+Dec 8 1970* - https://www.newspapers.com/clip/104532269/1970-12-08-coaches-poll/
 
-1. Texas
-2. Ohio State
-3. Nebraska
+1. Texas (25)
+2. Ohio State (6)
+3. Nebraska (2)
 4. Tennessee
 5. Notre Dame
 6. Louisiana State
@@ -290,8 +305,11 @@ Dec 7 1970
 16. Colorado
 T-17. Toledo
  -- . Georgia Tech
-19. Penn State
-20. 
+T-19. Penn State
+ -- . Southern California
+Others Receiving Votes: N/A
+
+* Only 33 of 35 coaches participated in voting this week
 
 
 no post-season poll
