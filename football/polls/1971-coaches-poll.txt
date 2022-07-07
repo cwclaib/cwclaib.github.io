@@ -1,10 +1,12 @@
+NOTE: It seems likely that the UPI stopped reporting teams in the "Others Receiving Votes" section.  Though votes were heavily concentrated among the upper tier of teams this season (as evidenced by 5 weeks of polling failing to yield a full 20 teams), it is unusual that not a single paper carried a tally for the "RV" section, especially when considering that several of the weeks where the 20th team received >1 vote (weeks 1-2: 4, week 11: 2) failed to include any additional teams.
+
 no pre-season poll
 
 
-Sep 13 1971
+Sep 14 1971* - https://www.newspapers.com/clip/105079730/1971-09-14-coaches-poll/
 
-1. Nebraska
-2. Notre Dame
+1. Nebraska (26)
+2. Notre Dame (8)
 3. Texas
 4. Ohio State
 5. Michigan
@@ -17,18 +19,20 @@ Sep 13 1971
 12. Oklahoma
 13. Georgia
 14. Washington
-T-15. Penn State
- -- . Arizona State
+15. Arizona State
+16. Penn State
 17. Southern California
 18. Louisiana State
 19. Syracuse
 20. Houston
+Others Receiving Votes: N/A
 
+* Only 34 of 35 coaches participated in voting this week
 
-Sep 20 1971
+Sep 21 1971* - https://www.newspapers.com/clip/105080116/1971-09-21-coaches-poll/
 
-1. Nebraska
-2. Notre Dame
+1. Nebraska (25)
+2. Notre Dame (8)
 3. Texas
 4. Michigan
 5. Ohio State
@@ -41,22 +45,25 @@ Sep 20 1971
 12. Stanford
 T-13. Georgia
  -- . Washington
-15. 
+ -- . Penn State
 16. Arizona State
 17. Southern California
 18. Louisiana State
 T-19. North Carolina
  -- . Georgia Tech
+Others Receiving Votes: N/A
+
+* Only 33 of 35 coaches participated in voting this week
 
 
-Sep 27 1971
+Sep 28 1971 - https://www.newspapers.com/clip/105080435/1971-09-28-coaches-poll/
 
-1. Nebraska
+1. Nebraska (33)
 2. Michigan
 3. Texas
-4. Notre Dame
+4. Notre Dame (1)
 5. Alabama
-6. Colorado
+6. Colorado (1)
 7. Auburn
 8. Oklahoma
 9. Stanford
@@ -69,15 +76,15 @@ Sep 27 1971
 16. Louisiana State
 17. Ohio State
 18. North Carolina
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 4 1971
+Oct 5 1971 - https://www.newspapers.com/clip/105080598/1971-10-05-coaches-poll/
 
-1. Nebraska
-2. Michigan
-3. Texas
+1. Nebraska (33)
+2. Michigan (1)
+3. Texas (1)
 4. Alabama
 5. Notre Dame
 6. Auburn
@@ -93,15 +100,15 @@ T-11. Penn State
 16. Louisiana State
 17. North Carolina
 18. Arkansas
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 11 1971
+Oct 12 1971 - https://www.newspapers.com/clip/105128726/1971-10-12-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
-3. Michigan
+1. Nebraska (31)
+2. Oklahoma (3)
+3. Michigan (1)
 4. Alabama
 5. Colorado
 6. Notre Dame
@@ -117,14 +124,14 @@ Oct 11 1971
 16. Florida State
 17. Arkansas
 18. Washington
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 18 1971
+Oct 19 1971* - https://www.newspapers.com/clip/105128752/1971-10-19-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
+1. Nebraska (29)
+2. Oklahoma (5)
 3. Michigan
 4. Alabama
 5. Auburn
@@ -140,17 +147,19 @@ Oct 18 1971
 15. Houston
 T-16. Purdue
  -- . Tennessee
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
+
+* Only 34 of 35 coaches participated in voting this week
 
 
-Oct 25 1971
+Oct 25 1971 - https://www.newspapers.com/clip/105128797/1971-10-26-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
+1. Nebraska (26)
+2. Oklahoma (8)
 3. Michigan
-4. Alabama
+4. Alabama (1)
 5. Auburn
 6. Georgia
 7. Penn State
@@ -165,16 +174,16 @@ Oct 25 1971
 16. Florida State
 17. Texas
 18. Air Force
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Nov 1 1971
+Nov 2 1971 - https://www.newspapers.com/clip/105128833/1971-11-02-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
-3. Michigan
-4. Alabama
+1. Nebraska (24)
+2. Oklahoma (9)
+3. Michigan (1)
+4. Alabama (1)
 5. Auburn
 6. Georgia
 7. Penn State
@@ -189,16 +198,17 @@ T-12. Arkansas
 16. Houston
 17. Texas
 18. Louisiana State
-19. North Carolina
-20. Southern California
+T-19. North Carolina
+ -- . Southern California
+Others Receiving Votes: N/A
 
 
-Nov 8 1971
+Nov 9 1971 - https://www.newspapers.com/clip/105129875/1971-11-09-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
-3. Michigan
-4. Alabama
+1. Nebraska (30)
+2. Oklahoma (3)
+3. Michigan (1)
+4. Alabama (1)
 5. Auburn
 6. Georgia
 7. Penn State
@@ -215,14 +225,15 @@ T-15. Southern California
  -- . Michigan State
 T-19. Florida State
  -- . Ohio State
+Others Receiving Votes: N/A
 
 
-Nov 15 1971
+Nov 16 1971 - https://www.newspapers.com/clip/105129927/1971-11-16-coaches-poll/
 
-1. Nebraska
-2. Oklahoma
-3. Michigan
-4. Alabama
+1. Nebraska (30)
+2. Oklahoma (3)
+3. Michigan (1)
+4. Alabama (1)
 5. Auburn
 6. Penn State
 7. Notre Dame
@@ -237,11 +248,12 @@ Nov 15 1971
 16. Southern California
 17. North Carolina
 18. Louisiana State
-19. Arkansas
-20. Stanford
+T-19. Arkansas
+ -- . Stanford
+Others Receiving Votes: N/A
 
 
-Nov 22 1971
+Nov 23 1971 - https://www.newspapers.com/clip/105130041/1971-11-23-coaches-poll/
 
 1. Nebraska
 2. Oklahoma
@@ -265,12 +277,12 @@ T-18. Arkansas
 20. Florida State
 
 
-Nov 29 1971
+Nov 30 1971* - https://www.newspapers.com/clip/105130288/1971-11-30-coaches-poll/
 
-1. Nebraska
-2. Alabama
+1. Nebraska (32)
+2. Alabama (1)
 3. Oklahoma
-4. Michigan
+4. Michigan (1)
 5. Penn State
 6. Auburn
 7. Colorado
@@ -282,19 +294,21 @@ Nov 29 1971
 13. Toledo
 14. Houston
 15. Stanford
-16. Arkansas
+16. Notre Dame
 17. North Carolina
 18. Iowa State
 19. Florida State
 20. Washington
 
+* Only 34 of 35 coaches participated in voting this week
 
-Dec 6 1971
 
-1. Nebraska
-2. Alabama
+Dec 7 1971* - https://www.newspapers.com/clip/105130383/1971-12-07-coaches-poll/
+
+1. Nebraska (29)
+2. Alabama (2)
 3. Oklahoma
-4. Michigan
+4. Michigan (1)
 5. Auburn
 6. Arizona State
 7. Colorado
@@ -312,6 +326,8 @@ Dec 6 1971
 19. Florida State
 T-20. Arkansas
  -- . Mississippi
+
+* While several long-form descriptions of the UPI poll printed papers noted that only 32 of the 35 coaches voted in the final poll of the season, every copy of the poll I found failed to indicate who the 32nd vote went to, except for one (https://www.newspapers.com/clip/105145233/1971-12-07-coaches-poll-1st-place-votes/), which attributed the vote to Michigan 
 
 
 no post-season poll
