@@ -1,39 +1,41 @@
+NOTE: A continuation of the trend from 1971, it seems likely that the UPI stopped reporting teams in the "Others Receiving Votes" section.
+
 no pre-season poll
 
 
-Sep 11 1972
+Sep 12 1972 - https://www.newspapers.com/clip/105210915/1972-09-12-coaches-poll/
 
-1. Oklahoma
-2. Southern California
-3. Colorado
-4. Ohio State
-5. Alabama
+1. Oklahoma (11)
+2. Southern California (11)
+3. Colorado (6)
+4. Ohio State (4)
+5. Alabama (2)
 6. Tennessee
 7. Penn State
 8. Louisiana State
 9. Nebraska
 10. Michigan
-11. UCLA
+11. UCLA (1)
 12. Arizona State
 13. Texas
 14. Notre Dame
 15. Washington
 16. Florida State
-T-17. Iowa
+T-17. Iowa State
  -- . Georgia
 19. Purdue
 20. Auburn
 
 
-Sep 19 1972
+Sep 19 1972 - https://www.newspapers.com/clip/105211072/1972-09-19-coaches-poll/
 
-1. Southern California
-2. Oklahoma
-3. Colorado
+1. Southern California (14)
+2. Oklahoma (13)
+3. Colorado (4)
 4. Tennessee
-5. Ohio State
-6. Alabama
-7. UCLA
+5. Ohio State (2)
+6. Alabama (1)
+7. UCLA (1)
 8. Nebraska
 9. Louisiana State
 10. Arizona State
@@ -49,14 +51,14 @@ T-13. Penn State
 20. Arkansas
 
 
-Sep 25 1972
+Sep 26 1972 - https://www.newspapers.com/clip/105211239/1972-09-26-coaches-poll/
 
-1. Southern California
-2. Oklahoma
-3. Colorado
+1. Southern California (20)
+2. Oklahoma (12)
+3. Colorado (1)
 4. Tennessee
-5. Alabama
-6. Ohio State
+5. Alabama (1)
+6. Ohio State (1)
 7. Nebraska
 8. Michigan
 9. Louisiana State
@@ -73,12 +75,12 @@ T-17. Air Force
 20. Mississippi
 
 
-Oct 2 1972
+Oct 3 1972 - https://www.newspapers.com/clip/105211324/1972-10-03-coaches-poll/
 
-1. Southern California
-2. Oklahoma
-3. Alabama
-4. Ohio State
+1. Southern California (22)
+2. Oklahoma (11)
+3. Alabama (1)
+4. Ohio State (1)
 5. Nebraska
 6. Michigan
 7. Louisiana State
@@ -97,11 +99,11 @@ Oct 2 1972
 20. Arizona State
 
 
-Oct 9 1972
+Oct 10 1972 - https://www.newspapers.com/clip/105211435/1972-10-10-coaches-poll/
 
-1. Southern California
-2. Oklahoma
-3. Alabama
+1. Southern California (21)
+2. Oklahoma (13)
+3. Alabama (1)
 4. Ohio State
 5. Nebraska
 6. Michigan
@@ -121,11 +123,11 @@ Oct 9 1972
 20. Stanford
 
 
-Oct 16 1972
+Oct 17 1972 - https://www.newspapers.com/clip/105211585/1972-10-17-coaches-poll/
 
-1. Southern California
-2. Oklahoma
-3. Alabama
+1. Southern California (22)
+2. Oklahoma (12)
+3. Alabama (1)
 4. Nebraska
 5. Ohio State
 6. Michigan
@@ -139,18 +141,18 @@ Oct 16 1972
 14. Air Force
 15. Auburn
 16. Arizona State
-17. 
-18. 
-19. 
-20. 
+17. N/A
+18. N/A
+19. N/A
+20. N/A
 
 
-Oct 23 1972
+Oct 24 1972 - https://www.newspapers.com/clip/105211671/1972-10-24-coaches-poll/
 
-1. Southern California
-2. Alabama
+1. Southern California (32)
+2. Alabama (2)
 3. Ohio State
-4. Nebraska
+4. Nebraska (1)
 5. Michigan
 6. Louisiana State
 7. Colorado
@@ -165,15 +167,15 @@ Oct 23 1972
 16. Tennessee
 17. Southern Methodist
 18. Florida State
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 30 1972
+Oct 31 1972 - https://www.newspapers.com/clip/105211756/1972-10-31-coaches-poll/
 
-1. Southern California
-2. Alabama
-3. Nebraska
+1. Southern California (31)
+2. Alabama (2)
+3. Nebraska (2)
 4. Ohio State
 5. Michigan
 6. Oklahoma
@@ -189,15 +191,15 @@ Oct 30 1972
 T-16. Texas Tech
  -- . Tennessee
 18. Stanford
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Nov 6 1972
+Nov 7 1972 - https://www.newspapers.com/clip/105211877/1972-11-07-coaches-poll/
 
-1. Southern California
-2. Nebraska
-3. Alabama
+1. Southern California (27)
+2. Nebraska (6)
+3. Alabama (2)
 4. Ohio State
 5. Michigan
 6. Louisiana State
@@ -212,18 +214,18 @@ Nov 6 1972
 15. Texas Tech
 T-16. Colorado
  -- . North Carolina
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
 
 
-Nov 13 1972
+Nov 14 1972 - https://www.newspapers.com/clip/105211976/1972-11-14-coaches-poll/
 
-1. Southern California
-2. Alabama
+1. Southern California (31)
+2. Alabama (3)
 3. Michigan
 4. Oklahoma
-5. Nebraska
+5. Nebraska (1)
 6. Texas
 7. Louisiana State
 8. Penn State
@@ -236,18 +238,18 @@ Nov 13 1972
 15. Colorado
 16. Washington
 17. Notre Carolina
-18. Arizona State
-19. Utah State
-20. 
+T-18. Arizona State
+ -- . Utah State
+20. N/A
 
 
-Nov 20 1972
+Nov 21 1972 - https://www.newspapers.com/clip/105212053/1972-11-21-coaches-poll/
 
-1. Southern California
-2. Alabama
+1. Southern California (31)
+2. Alabama (3)
 3. Michigan
 4. Oklahoma
-5. Nebraska
+5. Nebraska (1)
 6. Texas
 7. Penn State
 8. Ohio State
@@ -261,14 +263,14 @@ Nov 20 1972
 T-16. North Carolina
  -- . Missouri
 18. Iowa State
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Nov 27 1972
+Nov 28 1972* - https://www.newspapers.com/clip/105212208/1972-11-28-coaches-poll/
 
-1. Southern California
-2. Alabama
+1. Southern California (31)
+2. Alabama (3)
 3. Oklahoma
 4. Ohio State
 5. Texas
@@ -286,14 +288,16 @@ T-15. Washington State
 T-16. North Carolina
  -- . UCLA
 17. Missouri
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
+
+* Only 34 of 35 coaches participated in voting this week
 
 
-Dec 4 1972
+Dec 5 1972 - https://www.newspapers.com/clip/105212499/1972-12-05-coaches-poll/
 
-1. Southern California
+1. Southern California (35)
 2. Oklahoma
 3. Ohio State
 4. Alabama
