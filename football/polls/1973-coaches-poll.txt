@@ -1,15 +1,17 @@
+NOTE: continuing the trend from 1971, no polls appear to have been published with an "Others Receiving Votes" section
+
 no pre-season poll
 
 
 Sep 10 1973 - no poll
 
 
-Sep 17 1973
+Sep 18 1973 - https://www.newspapers.com/clip/105231333/1973-09-18-coaches-poll/
 
-1. Southern California
-2. Nebraska
-3. Ohio State
-4. Alabama
+1. Southern California (21)
+2. Nebraska (9)
+3. Ohio State (4)
+4. Alabama (1)
 5. Texas
 6. Michigan
 7. Penn State
@@ -28,11 +30,11 @@ T-19. Tulane
  -- . North Carolina
 
 
-Sep 24 1973
+Sep 25 1973* - https://www.newspapers.com/clip/105231694/1973-09-25-coaches-poll/
 
-1. Southern California
-2. Nebraska
-3. Ohio State
+1. Southern California (23)
+2. Nebraska (8)
+3. Ohio State (4)
 4. Michigan
 5. Alabama
 6. Penn State
@@ -49,17 +51,19 @@ T-15. Florida
  -- . Southern Methodist
 T-18. Miami (FL)
  -- . Tulane
-20. 
+20. N/A
+
+* Five teams tied for 20th but were not listed
 
 
-Oct 1 1973
+Oct 2 1973 - https://www.newspapers.com/clip/105231743/1973-10-02-coaches-poll/
 
-1. Ohio State
-2. Nebraska
-3. Southern California
-4. Alabama
-5. Michigan
-6. Oklahoma
+1. Ohio State (21)
+2. Nebraska (4)
+3. Southern California (3-1/2)
+4. Alabama (5)
+5. Michigan (1)
+6. Oklahoma (1/2)
 7. Penn State
 8. Tennessee
 9. Notre Dame
@@ -72,15 +76,15 @@ Oct 1 1973
 T-16. West Virginia
  -- . Tulane
 18. Miami (FL)
-19. 
-20. 
+19. Texas
+20. N/A
 
 
-Oct 8 1973
+Oct 9 1973 - https://www.newspapers.com/clip/105231916/1973-10-09-coaches-poll/
 
-1. Ohio State
-2. Nebraska
-3. Alabama
+1. Ohio State (21)
+2. Nebraska (8)
+3. Alabama (6)
 4. Michigan
 5. Southern California
 6. Oklahoma
@@ -95,17 +99,17 @@ Oct 8 1973
 15. Tulane
 16. Texas
 17. Colorado
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
 
 
-Oct 15 1973
+Oct 16 1973 - https://www.newspapers.com/clip/105232052/1973-10-16-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
-4. Michigan
+1. Ohio State (27)
+2. Alabama (5)
+3. Oklahoma (2)
+4. Michigan (1)
 5. Southern California
 6. Penn State
 7. Louisiana State
@@ -124,11 +128,11 @@ T-18. Kansas
  -- . Miami (OH)
 
 
-Oct 22 1973
+Oct 23 1973 - https://www.newspapers.com/clip/105232150/1973-10-23-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
+1. Ohio State (24)
+2. Alabama (9)
+3. Oklahoma (2)
 4. Michigan
 5. Southern California
 6. Penn State
@@ -144,17 +148,17 @@ T-10. Arizona State
 16. Texas Tech
 T-17. Miami (OH)
  -- . Southern Methodist
-19. 
-20. 
+19. N/A
+20. N/A
 
 
-Oct 29 1973
+Oct 30 1973 - https://www.newspapers.com/clip/105232277/1973-10-30-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
+1. Ohio State (22)
+2. Alabama (9)
+3. Oklahoma (3)
 4. Michigan
-5. Notre Dame
+5. Notre Dame (1)
 6. Penn State
 7. Louisiana State
 8. Arizona State
@@ -172,13 +176,13 @@ T-19. Miami (OH)
  -- . Auburn
 
 
-Nov 5 1973
+Nov 6 1973 - https://www.newspapers.com/clip/105232350/1971-11-06-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
+1. Ohio State (24)
+2. Alabama (8)
+3. Oklahoma (2)
 4. Michigan
-5. Notre Dame
+5. Notre Dame (1)
 6. Penn State
 7. Louisiana State
 8. UCLA
@@ -191,18 +195,18 @@ Nov 5 1973
 T-15. Miami (OH)
  -- . Arizona State
 17. Tulane
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
 
 
-Nov 12 1973
+Nov 13 1973 - https://www.newspapers.com/clip/105232609/1973-11-13-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
+1. Ohio State (23)
+2. Alabama (9)
+3. Oklahoma (2)
 4. Michigan
-5. Notre Dame
+5. Notre Dame (1)
 6. Penn State
 7. Louisiana State
 8. UCLA
@@ -220,13 +224,13 @@ T-19. Tennessee
  -- . Tulane
 
 
-Nov 19 1973
+Nov 20 1973 - https://www.newspapers.com/clip/105232750/1973-11-20-coaches-poll/
 
-1. Ohio State
-2. Alabama
-3. Oklahoma
+1. Ohio State (22)
+2. Alabama (9)
+3. Oklahoma (3)
 4. Michigan
-5. Notre Dame
+5. Notre Dame (1)
 6. Penn State
 7. Louisiana State
 8. UCLA
@@ -239,18 +243,18 @@ Nov 19 1973
 15. Miami (OH)
 T-16. Tulane
  -- . Kansas
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
 
 
-Nov 26 1973
+Nov 27 1973 - https://www.newspapers.com/clip/105232837/1973-11-27-coaches-poll/
 
-1. Alabama
-2. Oklahoma
-3. Ohio State
-4. Notre Dame
-5. Michigan
+1. Alabama (22)
+2. Oklahoma (9)
+3. Ohio State (2-1/2)
+4. Notre Dame (1)
+5. Michigan (1/2)
 6. Penn State
 7. Southern California
 8. Louisiana State
@@ -263,19 +267,19 @@ Nov 26 1973
 15. Kansas
 16. Miami (OH)
 17. Maryland
-18. 
-19. 
-20. 
+18. N/A
+19. N/A
+20. N/A
 
 
-Dec 3 1973
+Dec 4 1973* - https://www.newspapers.com/clip/105232944/1973-12-04-coaches-poll/
 
-1. Alabama
-2. Oklahoma
-3. Ohio State
-4. Notre Dame
+1. Alabama (21)
+2. Oklahoma (9)
+3. Ohio State (2)
+4. Notre Dame (1)
 5. Penn State
-6. Michigan
+6. Michigan (1)
 7. Southern California
 8. Texas
 9. UCLA
@@ -290,3 +294,5 @@ T-15. Tulane
 T-18. Maryland
  -- . San Diego State
  -- . Florida
+
+* Only 34 of 35 coaches participated in voting this week
