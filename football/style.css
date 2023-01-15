@@ -8,16 +8,15 @@ html {
   margin: 0;
 }
 
-u.dotted{
+u.dotted{ /* deprecated */
   border-bottom: 2px dotted #000000;
   text-decoration: none; 
 }
 
 table, th, td {
-
 	border: 1px solid black ;
-      text-align: center;
-       }
+	text-align: center;
+}
 
 table.wide {
     display: block;
@@ -25,13 +24,12 @@ table.wide {
     margin: 0 auto;
     overflow-x: auto;
     white-space: nowrap;
-	border: 1px solid black ;
+	border: 1px solid black;
       text-align: center;
 }
 
-
 .roster {
-    table-layout: fixed ;
+    table-layout: fixed;
     width: 400px;
 }
 
