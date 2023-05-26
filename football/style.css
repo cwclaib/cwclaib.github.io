@@ -28,6 +28,25 @@ table.wide {
       text-align: center;
 }
 
+table.box th:not(:first-child) {
+	width: 40px;
+}
+
+table.box td:first-child {
+	text-align: left;
+}
+
+table.box td:last-child {
+	font-weight: bold;
+}
+
+table.scoring td:nth-child(3) {
+    text-align: left;
+	width: 700px;
+}
+
+
+
 .roster {
     table-layout: fixed;
     width: 400px;
