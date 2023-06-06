@@ -69,3 +69,11 @@ tr.uncounted {
 	vertical-align: top;
 	text-align: left;
 }
+
+
+/* figure{
+	transition: transform .2s;
+}
+figure:hover{
+	transform:scale(1.25);
+} /*
