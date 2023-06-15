@@ -9,6 +9,7 @@
 /hiking/**/*.[mM][oO][vV]
 !/football/**/*.[jJ][pP][gG]
 !/football/**/*.[pP][nN][gG]
+/football/locations/pics-saved/
 !/hiking/icon.png
 !/hiking/dupont/main-falls-map.gif
 !/hiking/nantahalah/pinnacle-park/pinnacle-park-full-map.jpg
