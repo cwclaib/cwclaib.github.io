@@ -14,6 +14,7 @@ YEAR	PLAYED?		REASON IF NO
 1902	YES
 1903	NO		dispute caused by giving A&M students season tickets in 1902, lowering UNC's gate receipt - https://www.newspapers.com/image/76143135/
 1904	YES			(almost no because of 1904 baseball game - A&M quit in 7th inning due to unfair refereeing)
+			https://www.newspapers.com/image/80439191/?match=1
 1905	YES		
 1906	NO		end of athletic relations (1) - game canceled due to conflict over Wilson's eligibility
 				https://www.newspapers.com/image/67863088/
