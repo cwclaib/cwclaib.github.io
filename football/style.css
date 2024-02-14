@@ -40,9 +40,20 @@ table.box td:last-child {
 	font-weight: bold;
 }
 
-table.scoring td:nth-child(3) {
+table.scoring td:nth-last-child(3) {
     text-align: left;
-	width: 700px;
+}
+
+table.notes td:nth-child(2) {
+    text-align: left;
+}
+
+table.notes td:nth-child(3) {
+    text-align: left;
+}
+
+td.left {
+    text-align: left;
 }
 
 
