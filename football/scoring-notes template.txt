@@ -12,7 +12,7 @@
 	</tr>
 	<tr>
 		<td>1st</td>
-		<td>t-15</td>
+		<td><i>unk</i></td>
 		<td><b>ORI</b> - Howard - 2 yd run (Joyner kick) unk plays, unk yards, TOP unk</td>
 		<td>0</td>
 		<td>6</td>
@@ -53,10 +53,10 @@
 		<td> </td>
 	</tr>
 	<tr><td class="left" colspan=3><center><b><u>Game Notes:</u></b></center>
-	<b>Kick Off Time</b>: 3:50 PM - 11/30/1899 - vs Oak Ridge Institute<br>
+	<b>Kick Off Time</b>: unknown - info<br>
 	<b>Length:</b> unk (unk / unk) - Duration: unk<br>
-	<b>Attendance:</b> 800-1,000<br>
-	<b>Location:</b> Fair Grounds - Raleigh, NC<br>
+	<b>Attendance:</b> unknown<br>
+	<b>Location:</b> location<br>
 	<b>Temperature:</b> ???<br>
 	<b>Weather:</b> ???<br>
 	<b>Wind:</b> ???<br></td></tr>
