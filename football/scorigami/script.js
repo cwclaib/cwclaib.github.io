@@ -2,7 +2,7 @@ const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ77Ih8-pz10Wty_e9F
 
 let results;
 
-const csvData = Papa.parse, (url, {
+const csvData = Papa.parse(url, {
 	dyanmicTypig: true,
 	download: true,
 	header: true,
