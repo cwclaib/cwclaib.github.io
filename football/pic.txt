@@ -1,0 +1,9 @@
+
+<br>
+<center>
+<figure>
+	<image src="usc-team.jpg" width="600"></img>
+	<figcaption>A photo of South Carolina's team from <a href="https://digital.tcl.sc.edu/digital/collection/garnetblack/id/42228">Garnet and Black Vol. XIX (1906)</a>, p. 150.</figcaption>
+</figure>
+</center>
+<br>
