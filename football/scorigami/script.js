@@ -82,7 +82,7 @@ function populateTable(table, games) {
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
 		elem.classList.add("green");
-		elem.title = value["NCSU Score"] + " vs " + value["Opp Score"] + ", " + value["Date"];
+		elem.title = value["Date"] + " - vs " + value["Opponent"];
 	}
 }
 
