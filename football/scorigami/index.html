@@ -1,48 +1,16 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-
-
-    <head>
-        <link href="../style.css" rel="stylesheet" type="text/css" />
-		<link rel="icon" type="image/png" href="../../thumbnail2.png">
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-		
-		<title>NC State Scorigami</title>
-    </head>
-
-<style>
-iframe {
-	overflow: scroll;
-}
-</style>
-
+<head>
+	<link rel="stylesheet" href="page.css">
+</head>
+<script src="script.js"></script>
 <body>
 
-<center>
-	<h2>NC State Scorigami</h2>
-</center>
+<h1>Scorigami</h1>
+<p>Here's is a super cool table:</p>
 
-<br>
-
-
-
-<p>The first two documents are traditional Scorigamis, which looks at game results from the perspective of a winning score.  For example, if NC State has ever had any game end 24-17, regardless of winning or losing, that game will be represented below.  The first chart shows our winning percentage when games end at that score, while the second shows the total number of game results at that score.  The third chart is a breakdown of NC State's game results by final score, taking into account both winners and losers.</p>
-
-<div class="container">
-	<input type="file" id="file-input" accept=".csv" required id="">
-	<table class="table table-bordered" id="csv-table"> </table>
-</div>
-
-<script src="script.js"></script>
-
-
-<center><p><i>Last updated: 11/5/2023 &mdash; tables update automatically</i></p></center>
+<table id="scorigami-table">
+</table>
 
 </body>
-
-
-
 </html>
