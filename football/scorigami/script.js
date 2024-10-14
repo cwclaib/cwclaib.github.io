@@ -76,32 +76,15 @@ function setDefaultColors(table, scores) {
 
 function populateTable(table, games) {
 	for (const value of Object.values(games)) {
-		let row = Math.min(value["team1score"], value["team2score"]);
-		let col = Math.max(value["team1score"], value["team2score"]);
+		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
+		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
 		elem.classList.add("green");
-		elem.title = value["team1"] + " vs " + value["team2"] + ", " + value["date"];
+		elem.title = value["NCSU Score"] + " vs " + value["Opp Score"] + ", " + value["Date"];
 	}
 }
-
-const csvFilePath='https://docs.google.com/spreadsheets/d/e/2PACX-1vQ77Ih8-pz10Wty_e9FmiwJ95Zafv_025G_ZSfiQ-0IFjP3kAZ4rZHVEiY4DU49CNUiZMlyJSZ9O7rq/pub?gid=1191433987&single=true&output=csv'
-const csv=require('csvtojson')
-csv()
-	.fromFile(csvFilePath)
-	.then((jsonObj)=>{
-		console.log(jsonObj);
-		/**
-		 * [
-		 * 	{a:"1", b:"2", c:"3"},
-		 * 	{a:"4", b:"5". c:"6"}
-		 * ]
-		 */ 
-})
- 
-// Async / await usage
-const jsonArray=await csv().fromFile(csvFilePath);
 
 function loadJsonCallback(data) {
 	let table = document.getElementById("scorigami-table");
