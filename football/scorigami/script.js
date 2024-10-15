@@ -15,8 +15,8 @@ function getTableEntryId(rowId, columnId) {
 function getScores(games) {
 	let scores = [];
 	for (const value of Object.values(games)) {
-		scores.push(value["team1score"]);
-		scores.push(value["team2score"]);
+		scores.push(value["NCSU Score"]);
+		scores.push(value["Opp Score"]);
 	}
 	return scores;
 }
