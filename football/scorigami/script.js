@@ -8,6 +8,12 @@
 
 TABLE_ID = "scorigami-table"
 
+function isInt(value) {
+	return !isNaN(value)
+		&& parseInt(Number(value)) == value
+		&& !isNaN(parseInt(value, 10));
+}
+
 function getTableEntryId(rowId, columnId) {
 	return TABLE_ID + "_" + rowId + "_" + columnId;
 }
@@ -15,8 +21,12 @@ function getTableEntryId(rowId, columnId) {
 function getScores(games) {
 	let scores = [];
 	for (const value of Object.values(games)) {
-		scores.push(value["team1score"]);
-		scores.push(value["team2score"]);
+		let s1 = value["NCSU Score"];
+		let s2 = value["Opp Score"];
+		if (isInt(s1) && isInt(s2)) {
+			scores.push(s1);
+			scores.push(s2);
+		}
 	}
 	return scores;
 }
@@ -76,6 +86,11 @@ function setDefaultColors(table, scores) {
 
 function populateTable(table, games) {
 	for (const value of Object.values(games)) {
+		// Skips over non-numbers
+		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
+			continue;
+		}
+
 		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
