@@ -86,6 +86,11 @@ function setDefaultColors(table, scores) {
 
 function populateTable(table, games) {
 	for (const value of Object.values(games)) {
+		// Skips over non-numbers
+		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
+			continue;
+		}
+
 		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
