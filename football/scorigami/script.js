@@ -97,7 +97,7 @@ function populateTable(table, games) {
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
 		elem.classList.add("green");
-		elem.title = value[col] + "-" + value[row], value["Opp Score"])] + ": " + value["Date"] + " - vs " + value["Opponent"];
+		elem.title = value["Result"] + " " + value[col] + "-" + value[row] + ": " + value["Date"] + " - vs " + value["Opponent"];
 	}
 }
 
