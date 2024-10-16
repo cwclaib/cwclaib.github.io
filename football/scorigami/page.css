@@ -1,3 +1,17 @@
+html {
+  background: white;
+  box-sizing: border-box;
+  min-height: 100%;
+  border: #FF0000 15px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0;
+}
+
+
+
+
+
 .black {
 	background-color: black;
 }
