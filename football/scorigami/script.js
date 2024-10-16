@@ -74,14 +74,16 @@ function createEmptyTable(table, scores) {
 function setDefaultColors(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
+	let impossibleScore = [ [0,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
 	for (let row = minScore; row <= maxScore; row++) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let bottomHalf = col < row;
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
 			elem.classList.add(bottomHalf ? "black" : "white");
-			let tieRow = col = row;
+			let tieRow = col === row;
 			elem.classList.add(tieRow ? "orange");
+			elem.classList.add(impossibleScore ? "black");
 		}
 	}
 }
