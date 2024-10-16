@@ -97,7 +97,7 @@ function populateTable(table, games) {
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
 		elem.classList.add("green");
-		elem.title = value["Date"] + " - vs " + value["Opponent"];
+		elem.title = value[Math.max(value["NCSU Score"], value["Opp Score"])] "-" value[Math.min(value["NCSU Score"], value["Opp Score"])] ": " valuevalue["Date"] + " - vs " + value["Opponent"];
 	}
 }
 
