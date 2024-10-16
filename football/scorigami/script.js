@@ -84,7 +84,9 @@ function setDefaultColors(table, scores) {
 			if (row === col) {
 				elem.classList.add("orange");
 			}
-		///	elem.classList.add(impossibleScore "black");
+			if ([row, col] === impossibleScore {
+				elem.classList.add("black");
+			}
 		}
 	}
 }
