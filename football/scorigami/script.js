@@ -101,6 +101,7 @@ function populateTable(table, games) {
 		let id = getTableEntryId(row, col);
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
+		elem.classList.remove("orange");
 		elem.classList.add("green");
 		elem.title = value["Result"] + " " + col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"];
 	}
