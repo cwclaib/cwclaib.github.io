@@ -82,8 +82,8 @@ function setDefaultColors(table, scores) {
 			let elem = document.getElementById(id);
 			elem.classList.add(bottomHalf ? "black" : "white");
 			let tieRow = col === row;
-			elem.classList.add(tieRow ? "orange");
-			elem.classList.add(impossibleScore ? "black");
+			elem.classList.add(tieRow "orange");
+			elem.classList.add(impossibleScore "black");
 		}
 	}
 }
