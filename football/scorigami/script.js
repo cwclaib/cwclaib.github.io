@@ -80,6 +80,8 @@ function setDefaultColors(table, scores) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
 			elem.classList.add(bottomHalf ? "black" : "white");
+			let tieRow = col = row;
+			elem.classList.add(tieRow ? "orange");
 		}
 	}
 }
