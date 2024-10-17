@@ -72,7 +72,7 @@ function createEmptyTable(table, scores) {
 }
 
 function setDefaultColors(table, scores) {
-	let i = 0; 
+	let i = 1; 
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
 	let impossibleScore = [ [0,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
@@ -85,9 +85,9 @@ function setDefaultColors(table, scores) {
 			if (row === col) {
 				elem.classList.add("orange");
 			}
-			else if ( i < 6 ) {
-				if ( row === impossibleScore[i][0]) {
-					if ( col === impossibleScore[i][1] ) {
+			else if ( i < 7 ) {
+				if ( row === impossibleScore[i-1][0]) {
+					if ( col === impossibleScore[i-1][1] ) {
 						elem.classList.add("black");
 						i += 1;
 					}
