@@ -82,10 +82,7 @@ function setDefaultColors(table, scores) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
 			elem.classList.add(bottomHalf ? "black" : "white");
-			if (row === col) {
-				elem.classList.add("orange");
-			}
-			else if ( i < 6 ) {
+			if ( i < 6 ) {
 				console.log("hello");
 				if ( row === impossibleScore[i][0]) {
 					console.log("hey");
@@ -100,6 +97,9 @@ function setDefaultColors(table, scores) {
 						console.log(i);
 					}
 				}					
+			}
+			else if (row === col) {
+				elem.classList.add("orange");
 			}
 		}
 	}
