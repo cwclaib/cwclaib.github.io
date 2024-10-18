@@ -73,7 +73,7 @@ function createEmptyTable(table, scores) {
 
 function getCellClass(row, col) {
 	let bottomHalf = col < row;
-	let impossibleScore = [0,1] && [1,1] && [1,2] && [1,3] && [1,4] && [1,5] && [1,7];
+	let impossibleScore = row === [0, 1, 1, 1, 1, 1, 1] &&& col === [1, 1, 2, 3, 4, 5, 7];
 	let noLongerPossibleScore = row === col;
 	if (bottomHalf) {
 		return "black";
@@ -117,7 +117,6 @@ function populateTable(table, games) {
 		let elem = document.getElementById(id);
 		elem.classList.remove("white");
 		elem.classList.remove("orange");
-		elem.classList.remove("black");
 		elem.classList.add("green");
 		elem.title = col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
 	}
