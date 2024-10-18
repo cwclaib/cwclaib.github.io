@@ -99,7 +99,7 @@ function setDefaultColors(table, scores) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
-			elem.classList.add(getCellClass(colors);
+			elem.classList.add(getCellClass(colors));
 		}
 	}
 }
