@@ -71,7 +71,7 @@ function createEmptyTable(table, scores) {
 	}
 }
 
-function getCellClass(...) {
+function getCellClass(row, col) {
 	let bottomHalf = col < row;
 	let impossibleScore = [ [0,1], [1,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
 	let noLongerPossibleScore = row === col;
@@ -99,7 +99,7 @@ function setDefaultColors(table, scores) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
-			elem.classList.add(getCellClass(...));
+			elem.classList.add(getCellClass(row, col));
 		}
 	}
 }
