@@ -78,9 +78,9 @@ function getCellClass(row, col) {
 	if (bottomHalf) {
 		return "black";
 	}
-	else if (impossibleScore) {
-		return "black";
-	}
+	/// else if (impossibleScore) {
+	///	return "black";
+	/// }
 	else if (noLongerPossibleScore) {
 		return "orange";
 	}
