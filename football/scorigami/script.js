@@ -71,36 +71,35 @@ function createEmptyTable(table, scores) {
 	}
 }
 
+function getCellClass(colors) {
+	let bottomHalf = col < row;
+	let impossibleScore = [ [0,1], [1,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
+	let noLongerPossibleScore = row === col;
+	if (bottomHalf) {
+		return "black";
+	}
+	else if (impossibleScore) {
+		return "black";
+	}
+	else if (noLongerPossibleScore) {
+		return "orange";
+	}
+	else {
+		return "white";
+	}
+}
+
+
+
 function setDefaultColors(table, scores) {
 	let i = 0; 
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	let impossibleScore = [ [0,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
 	for (let row = minScore; row <= maxScore; row++) {
 		for (let col = minScore; col <= maxScore; col++) {
-			let bottomHalf = col < row;
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
-			elem.classList.add(bottomHalf ? "black" : "white");
-			if ( i < 6 ) {
-				console.log("hello");
-				if ( row === impossibleScore[i][0]) {
-					console.log("hey");
-					console.log(row)
-					console.log(col)
-					if ( col === impossibleScore[i][1] ) {
-						console.log("bazinga");
-						console.log(i)
-						elem.classList.add("black");
-						i += 1;
-						console.log("done");
-						console.log(i);
-					}
-				}					
-			}
-			else if (row === col) {
-				elem.classList.add("orange");
-			}
+			elem.classList.add(getCellClass(colors);
 		}
 	}
 }
