@@ -73,7 +73,7 @@ function createEmptyTable(table, scores) {
 
 function getCellClass(row, col) {
 	let bottomHalf = col < row;
-	let impossibleScore = [row, col] === [0,1] || [row, col] === [1,1] || [row, col] === [1,2] || [row, col] === [1,3] || [row, col] === [1,4] || [row, col] === [1,5] || [row, col] === [1,7];
+	let impossibleScore = row === 0 && col === 1 || row === 1 && col === 1 || row === 1 && col === 2 || row === 1 && col === 3 || row === 1 && col === 4 || row === 1 && col === 5 || row === 1 && col === 7;
 	let noLongerPossibleScore = row === col;
 	if (bottomHalf) {
 		return "black";
