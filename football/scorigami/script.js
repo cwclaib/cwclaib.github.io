@@ -70,9 +70,9 @@ function createEmptyTable(table, scores) {
 	createRow(table, headerData, headerData, "header", true);
 
 	// Creates rows
-	for (let score = minScore; score <= maxScore; score++) {
+	for (let score = minScore; score <= 49; score++) {
 		let rowData = [score]; // Starts with score column
-		for (let col = minScore; col <= maxLoss; col++) {
+		for (let col = minScore; col <= maxScore; col++) {
 			rowData.push("");
 		}
 		createRow(table, rowData, headerData, score);
