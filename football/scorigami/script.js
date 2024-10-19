@@ -52,14 +52,16 @@ function createRow(table, data, header, rowId, isHeader=false) {
 function createEmptyTable(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	let results = [];
+	
+	for (let a = 0; a < num.length; a++) {
+    list.add(a) = Math.max(...num[a]);
+}
+	
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
 		headerData.push(score);
 	}
-	
-	let maxLoss = Math.max(...results);
 
 	// Creates headers
 	createRow(table, headerData, headerData, "header", true);
@@ -67,7 +69,7 @@ function createEmptyTable(table, scores) {
 	// Creates rows
 	for (let score = minScore; score <= 49; score++) {
 		let rowData = [score]; // Starts with score column
-		for (let col = minScore; col <= maxScco; col++) {
+		for (let col = minScore; col <= maxScore; col++) {
 			rowData.push("");
 		}
 		createRow(table, rowData, headerData, score);
