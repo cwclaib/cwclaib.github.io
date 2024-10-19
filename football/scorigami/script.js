@@ -20,16 +20,20 @@ function getTableEntryId(rowId, columnId) {
 
 function getScores(games) {
 	let scores = [];
+	let lossTeam = [];
 	for (const value of Object.values(games)) {
 		let s1 = value["NCSU Score"];
 		let s2 = value["Opp Score"];
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
+			if (s1 < s2) {
+				lossTeam.push(Math.min(s1, s2);
+			}
 		}
 	}
 	return scores;
-	console.log(scores);
+	let maxLoss = Math.max(...lossTeam);
 }
 
 function addRowEntry(row, text, type, id) {
@@ -53,15 +57,6 @@ function createRow(table, data, header, rowId, isHeader=false) {
 function createEmptyTable(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	
-	const results = [];
-
-	for (let a = 0; a < scores.length; a++) {
-		const calculation = Math.min(...scores[a]);
-		results.push(calculation);
-	}
-
-	let maxLoss = Math.max(...results)
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
