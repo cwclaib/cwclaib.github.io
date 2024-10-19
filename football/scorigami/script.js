@@ -60,7 +60,7 @@ function createEmptyTable(table, scores) {
 	}
 	
 	for (let a = 0; a < scores.length; a++ ) {
-		const calc = Math.min(...scores[a])
+		const calc = Math.min(scores[a])
 		results.push(calc);
 	}
 	
