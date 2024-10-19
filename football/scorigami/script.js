@@ -59,20 +59,15 @@ function createEmptyTable(table, scores) {
 		headerData.push(score);
 	}
 	
-	for (let a = 0; a < scores.length; a++ ) {
-		const calc = Math.min(scores[a])
-		results.push(calc);
-	}
-	
 	let maxLoss = Math.max(...results);
 
 	// Creates headers
 	createRow(table, headerData, headerData, "header", true);
 
 	// Creates rows
-	for (let score = minScore; score <= maxScore; score++) {
+	for (let score = minScore; score <= 49; score++) {
 		let rowData = [score]; // Starts with score column
-		for (let col = minScore; col <= maxScore; col++) {
+		for (let col = minScore; col <= maxScco; col++) {
 			rowData.push("");
 		}
 		createRow(table, rowData, headerData, score);
