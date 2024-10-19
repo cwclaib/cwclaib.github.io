@@ -105,8 +105,6 @@ function getCellClass(row, col) {
 	}
 }
 
-
-
 function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
@@ -129,9 +127,7 @@ function populateTable(table, games) {
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
 		let elem = document.getElementById(id);
-		elem.classList.remove("white");
-		elem.classList.remove("orange");
-		elem.classList.add("green");
+		elem.classList = ["green"];
 		elem.title = col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
 	}
 }
@@ -144,6 +140,6 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-fetch("data.json")
+fetch("https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
