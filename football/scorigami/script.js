@@ -52,6 +52,21 @@ function createRow(table, data, header, rowId, isHeader=false) {
 function createEmptyTable(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
+	
+	const results = [];
+
+	for (let i = 0; i < num.length; i++) {
+		const calculation = Math.min(...num[i]);
+		results.push(calculation);
+	}
+
+	let maxLoss = Math.max(...results)
+	
+	for (let a = 0; a < num.length; a++) {
+    list.add(a) = Math.max(...num[a]);
+}
+	
+	
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
@@ -62,7 +77,7 @@ function createEmptyTable(table, scores) {
 	createRow(table, headerData, headerData, "header", true);
 
 	// Creates rows
-	for (let score = minScore; score <= maxScore; score++) {
+	for (let score = minScore; score <= maxLoss; score++) {
 		let rowData = [score]; // Starts with score column
 		for (let col = minScore; col <= maxScore; col++) {
 			rowData.push("");
@@ -92,7 +107,6 @@ function getCellClass(row, col) {
 
 
 function setDefaultColors(table, scores) {
-	let i = 0; 
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
 	for (let row = minScore; row <= maxScore; row++) {
@@ -110,7 +124,6 @@ function populateTable(table, games) {
 		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
 			continue;
 		}
-
 		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
