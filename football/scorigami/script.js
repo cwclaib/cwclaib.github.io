@@ -75,9 +75,21 @@ function createEmptyTable(table, scores, maxLoss) {
 	}
 }
 
+function checkPairs(row, col, impossibleScores) {
+	for (let a = 0; a < impossibleScores.length; a++) {
+		if (row === impossibleScores[a][0]) {
+			if (col === impossibleScores[a][1]) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 function getCellClass(row, col) {
 	let bottomHalf = col < row;
-	let impossibleScore = row === 0 && col === 1 || row === 1 && col === 1 || row === 1 && col === 2 || row === 1 && col === 3 || row === 1 && col === 4 || row === 1 && col === 5 || row === 1 && col === 7;
+	let impossibleScores = [ [0,1], [1,1], [1,2], [1,3], [1,4], [1,5], [1,7] ];
+	let impossibleScore = checkPairs(row, col, impossibleScores);
 	let noLongerPossibleScore = row === col;
 	if (bottomHalf) {
 		return "black";
