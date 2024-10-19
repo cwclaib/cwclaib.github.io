@@ -27,7 +27,12 @@ function getScores(games) {
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
-			lossTeam.push(Math.min(s1.value, s2.value));
+			if (s1 < s2) {
+				lossTeam.push(s1);
+			}
+			else {
+				lossTeam.push(s2);
+			}
 		}
 	}
 	return scores;
@@ -54,7 +59,7 @@ function createRow(table, data, header, rowId, isHeader=false) {
 function createEmptyTable(table, scores, lossTeam) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	let maxLoss = Math.max(lossTeam.value);
+	let maxLoss = Math.max(...lossTeam);
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
