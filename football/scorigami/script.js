@@ -140,68 +140,6 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-function mouseOver(i, j) {
-	for (var k = 0; k <= g_data.maxpts; k++) {
-		var cell = document.getElementById("hover_" + i + "-" + k);
-		if (cell && k !== j) {
-			cell.classList.add("adjhover");
-		}
-		else if (k === j) {
-			cell.classList.add("over");
-		}
-		cell = document.getElementById("hover_" + k + "-" + j);
-		if (cell && k !== i) {
-			cell.classList.add("adjhover");
-		}
-	}
-	var colHeader = document.getElementById("colHeader_" + j);
-	colHeader.classList.add("adjhover");
-	var rowHeader = document.getElementById("rowHeader_" + i);
-	rowHeader.classList.add("adjhover");
-	var specialHeader2 = document.getElementById("specialHeader_" + (j + 1));
-	if (specialHeader2) {
-		specialHeader2.innerHTML = j;
-		specialHeader2.classList.add("adjhover");
-	}
-	var specialHeader = document.getElementById("specialHeader_" + i);
-	if (specialHeader) {
-		specialHeader.innerHTML = i;
-		specialHeader.classList.add("adjhover");
-	}
-}
-
-//called when moves mouse off an element
-//removes adjhover class to all elements in the same row and column as the hovered element
-function mouseOff(i, j) {
-	for (var k = 0; k <= g_data.maxpts; k++) {
-		var cell = document.getElementById("hover_" + i + "-" + k);
-		if (cell && k !== j) {
-			cell.classList.remove("adjhover");
-		}
-		else if (k === j) {
-			cell.classList.remove("over");
-		}
-		cell = document.getElementById("hover_" + k + "-" + j);
-		if (cell && k !== i) {
-			cell.classList.remove("adjhover");
-		}
-	}
-	var colHeader = document.getElementById("colHeader_" + j);
-	colHeader.classList.remove("adjhover");
-	var rowHeader = document.getElementById("rowHeader_" + i);
-	rowHeader.classList.remove("adjhover");
-	var specialHeader2 = document.getElementById("specialHeader_" + (j + 1));
-	if (specialHeader2) {
-		specialHeader2.innerHTML = "";
-		specialHeader2.classList.remove("adjhover");
-	}
-	var specialHeader = document.getElementById("specialHeader_" + i);
-	if (specialHeader) {
-		specialHeader.innerHTML = "";
-		specialHeader.classList.remove("adjhover");
-	}
-}
-
 fetch("data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
