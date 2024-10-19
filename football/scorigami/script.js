@@ -27,9 +27,7 @@ function getScores(games) {
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
-			if (s1 < s2) {
-				lossTeam.push(Math.min(s1, s2);
-			}
+			lossTeam.push(Math.min(s1, s2));
 		}
 	}
 	return scores;
