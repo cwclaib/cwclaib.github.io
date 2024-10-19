@@ -31,7 +31,7 @@ function getScores(games) {
 		}
 	}
 	return scores;
-	let maxLoss = Math.max(...lossTeam);
+	var maxLoss = Math.max(...lossTeam);
 }
 
 function addRowEntry(row, text, type, id) {
