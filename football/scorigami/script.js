@@ -51,12 +51,7 @@ function createRow(table, data, header, rowId, isHeader=false) {
 
 function createEmptyTable(table, scores) {
 	let minScore = Math.min(...scores);
-	let maxScore = Math.max(...scores);
-	
-	for (let a = 0; a < num.length; a++) {
-    list.add(a) = Math.max(...num[a]);
-}
-	
+	let maxScore = Math.max(...scores);	
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
