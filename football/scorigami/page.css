@@ -33,6 +33,9 @@ td {
 	padding: 0px;
 	margin: 0px;
 	font-weight:bold;
-	border-spacing: 0px;
 	font-size: 11px;
+}
+
+table {
+	border-spacing: 0;
 }
