@@ -18,6 +18,10 @@ function getTableEntryId(rowId, columnId) {
 	return TABLE_ID + "_" + rowId + "_" + columnId;
 }
 
+function getMaxRow() {
+	return 48;
+}
+
 function getScores(games) {
 	let scores = [];
 	for (const value of Object.values(games)) {
@@ -45,7 +49,7 @@ function createRow(table, data, header, rowId, isHeader=false) {
 		let d = data[i];
 		let h = header[i];
 		let id = getTableEntryId(rowId, h);
-		addRowEntry(row, d, isHeader ? "th" : "td", id);
+		addRowEntry(row, d, "td", id);
 	}
 }
 
@@ -62,7 +66,7 @@ function createEmptyTable(table, scores) {
 	createRow(table, headerData, headerData, "header", true);
 
 	// Creates rows
-	for (let score = minScore; score <= maxScore; score++) {
+	for (let score = minScore; score <= getMaxRow(); score++) {
 		let rowData = [score]; // Starts with score column
 		for (let col = minScore; col <= maxScore; col++) {
 			rowData.push("");
@@ -94,7 +98,7 @@ function getCellClass(row, col) {
 function setDefaultColors(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	for (let row = minScore; row <= maxScore; row++) {
+	for (let row = minScore; row <= getMaxRow(); row++) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
