@@ -27,12 +27,7 @@ function getScores(games) {
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
-			if (value["NCSU Score"] < value["Opp Score"]) {
-				lossTeam.push(s1);
-			}
-			else {
-				lossTeam.push(s2);
-			}
+			lossTeam.push(Math.min(scores))
 		}
 	}
 	return scores;
