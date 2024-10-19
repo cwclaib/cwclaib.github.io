@@ -49,7 +49,7 @@ function createRow(table, data, header, rowId, isHeader=false) {
 		let d = data[i];
 		let h = header[i];
 		let id = getTableEntryId(rowId, h);
-		addRowEntry(row, d, "td", id);
+		addRowEntry(row, d, "th", id);
 	}
 }
 
