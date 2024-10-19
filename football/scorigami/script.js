@@ -8,6 +8,7 @@
 
 TABLE_ID = "scorigami-table"
 
+
 function isInt(value) {
 	return !isNaN(value)
 		&& parseInt(Number(value)) == value
@@ -18,21 +19,20 @@ function getTableEntryId(rowId, columnId) {
 	return TABLE_ID + "_" + rowId + "_" + columnId;
 }
 
-function getMaxRow() {
-	return 48;
-}
-
 function getScores(games) {
 	let scores = [];
+	let maxLoss = 0;
 	for (const value of Object.values(games)) {
 		let s1 = value["NCSU Score"];
 		let s2 = value["Opp Score"];
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
+			let loserScore = Math.min(s1, s2);
+			maxLoss = Math.max(maxLoss, loserScore);
 		}
 	}
-	return scores;
+	return [scores, maxLoss];
 }
 
 function addRowEntry(row, text, type, id) {
@@ -53,7 +53,7 @@ function createRow(table, data, header, rowId, isHeader=false) {
 	}
 }
 
-function createEmptyTable(table, scores) {
+function createEmptyTable(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);	
 
@@ -66,7 +66,7 @@ function createEmptyTable(table, scores) {
 	createRow(table, headerData, headerData, "header", true);
 
 	// Creates rows
-	for (let score = minScore; score <= getMaxRow(); score++) {
+	for (let score = minScore; score <= maxLoss; score++) {
 		let rowData = [score]; // Starts with score column
 		for (let col = minScore; col <= maxScore; col++) {
 			rowData.push("");
@@ -95,10 +95,10 @@ function getCellClass(row, col) {
 
 
 
-function setDefaultColors(table, scores) {
+function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	for (let row = minScore; row <= getMaxRow(); row++) {
+	for (let row = minScore; row <= maxLoss; row++) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
@@ -126,9 +126,9 @@ function populateTable(table, games) {
 
 function loadJsonCallback(data) {
 	let table = document.getElementById("scorigami-table");
-	let scores = getScores(data["games"]);
-	createEmptyTable(table, scores);
-	setDefaultColors(table, scores);
+	let [scores, maxLoss] = getScores(data["games"]);
+	createEmptyTable(table, scores, maxLoss);
+	setDefaultColors(table, scores, maxLoss);
 	populateTable(table, data["games"]);
 }
 
