@@ -61,9 +61,6 @@ function createEmptyTable(table, scores) {
 	}
 
 	let maxLoss = Math.max(...results)
-}
-	
-	
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
