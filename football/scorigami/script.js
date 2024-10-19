@@ -29,6 +29,7 @@ function getScores(games) {
 		}
 	}
 	return scores;
+	console.log(scores);
 }
 
 function addRowEntry(row, text, type, id) {
