@@ -31,7 +31,6 @@ function getScores(games) {
 		}
 	}
 	return scores;
-	var maxLoss = Math.max(...lossTeam);
 }
 
 function addRowEntry(row, text, type, id) {
@@ -52,9 +51,10 @@ function createRow(table, data, header, rowId, isHeader=false) {
 	}
 }
 
-function createEmptyTable(table, scores) {
+function createEmptyTable(table, scores, lossTeam) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
+	let maxLoss = Math.max(...lossTeam);
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
