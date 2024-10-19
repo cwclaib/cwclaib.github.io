@@ -55,15 +55,12 @@ function createEmptyTable(table, scores) {
 	
 	const results = [];
 
-	for (let i = 0; i < num.length; i++) {
-		const calculation = Math.min(...num[i]);
+	for (let a = 0; a < scores.length; a++) {
+		const calculation = Math.min(...scores[a]);
 		results.push(calculation);
 	}
 
 	let maxLoss = Math.max(...results)
-	
-	for (let a = 0; a < num.length; a++) {
-    list.add(a) = Math.max(...num[a]);
 }
 	
 	
