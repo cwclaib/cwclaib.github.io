@@ -20,14 +20,12 @@ function getTableEntryId(rowId, columnId) {
 
 function getScores(games) {
 	let scores = [];
-	let lossTeam = [];
 	for (const value of Object.values(games)) {
 		let s1 = value["NCSU Score"];
 		let s2 = value["Opp Score"];
 		if (isInt(s1) && isInt(s2)) {
 			scores.push(s1);
 			scores.push(s2);
-			lossTeam.push(Math.min(scores))
 		}
 	}
 	return scores;
@@ -51,15 +49,22 @@ function createRow(table, data, header, rowId, isHeader=false) {
 	}
 }
 
-function createEmptyTable(table, scores, lossTeam) {
+function createEmptyTable(table, scores) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
-	let maxLoss = Math.max(...lossTeam);
+	let results = [];
 
 	let headerData = [""]; // Starts with empty data for left score column
 	for (let score = minScore; score <= maxScore; score++) {
 		headerData.push(score);
 	}
+	
+	for (let a = 0; a < scores.length; a++ ) {
+		const calc = Math.min(...scores[a])
+		results.push(calc);
+	}
+	
+	let maxLoss = Math.max(...results);
 
 	// Creates headers
 	createRow(table, headerData, headerData, "header", true);
