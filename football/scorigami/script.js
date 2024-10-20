@@ -143,3 +143,5 @@ function loadJsonCallback(data) {
 fetch("data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
+
+/// https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json
