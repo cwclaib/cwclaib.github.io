@@ -26,14 +26,14 @@ html {
 
 th,
 td {
-	min-width: 15px;
-	width: 15px;
-	height: 12px;
-	line-height: 12px;
+	min-width: 18px;
+	width: 18px;
+	height: 15px;
+	line-height: 15px;
 	padding: 0px;
 	margin: 0px;
 	font-weight:bold;
-	font-size: 9px;
+	font-size: 10px;
 }
 
 table {
@@ -43,6 +43,15 @@ table {
     margin: 0 auto;
     overflow-x: auto;
 	padding-bottom: 15px;
+	text-align: center;
 }
 
+tr:hover {
+	background-color: rgba(187, 187, 187, 0.60);
+}
+
+
+th:hover {
+	background-color: rgba(187, 187, 187, 0.60);
+}
 

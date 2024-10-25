@@ -134,9 +134,11 @@ function populateTable(table, games) {
 		let num = eval(arr[loc]);
 		elem.classList = ["green"];
 		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
+		elem.title = col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
 	}
 }
 
+/*
 function getGames(table, games, maxScore, maxLoss) {
 	let matrix = [];
 	for(let i=0; i<maxScore; i++) {
@@ -162,7 +164,7 @@ function getGames(table, games, maxScore, maxLoss) {
 		matrix[row][col][a].push(col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")");
 	}
 }
-
+*/
 
 
 
