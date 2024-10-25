@@ -107,8 +107,8 @@ function getCellClass(row, col) {
 
 function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
-	let maxScore = Math.max(...scores);
-	let size = eval((maxScore + 1)*(maxLoss+1)-1);
+	maxScore = Math.max(...scores);
+	size = eval((maxScore + 1)*(maxLoss+1)-1);
 	for (let row = minScore; row <= maxLoss; row++) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
@@ -118,8 +118,8 @@ function setDefaultColors(table, scores, maxLoss) {
 	}
 }
 
-function populateTable(table, games, size, maxScore) {
-	const arr = new Array(size).fill(0);
+function populateTable(table, games) {
+	const arr = Array(size).fill(0);
 	for (const value of Object.values(games)) {
 		// Skips over non-numbers
 		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
@@ -128,9 +128,10 @@ function populateTable(table, games, size, maxScore) {
 		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
-		let loc = eval(row*maxScore + col);
-		let elem = document.getElementById(id);		
-		let num = eval(arr[loc]+1);
+		let loc = eval(row*(maxScore+1) + col);
+		let elem = document.getElementById(id);
+		arr[loc]++
+		let num = eval(arr[loc]);
 		elem.classList = ["green"];
 		elem.innerHTML = eval(num);
 	}
@@ -173,7 +174,7 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-fetch("data.json")
+fetch("https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
 
