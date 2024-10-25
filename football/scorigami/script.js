@@ -108,6 +108,7 @@ function getCellClass(row, col) {
 function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	let maxScore = Math.max(...scores);
+	let size = eval((maxScore + 1)*(maxLoss+1)-1);
 	for (let row = minScore; row <= maxLoss; row++) {
 		for (let col = minScore; col <= maxScore; col++) {
 			let id = getTableEntryId(row, col);
@@ -117,7 +118,8 @@ function setDefaultColors(table, scores, maxLoss) {
 	}
 }
 
-function populateTable(table, games) {
+function populateTable(table, games, size, maxScore) {
+	const arr = new Array(size).fill(0);
 	for (const value of Object.values(games)) {
 		// Skips over non-numbers
 		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
@@ -126,11 +128,42 @@ function populateTable(table, games) {
 		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
 		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
 		let id = getTableEntryId(row, col);
-		let elem = document.getElementById(id);
+		let loc = eval(row*maxScore + col);
+		let elem = document.getElementById(id);		
+		let num = eval(arr[loc]+1);
 		elem.classList = ["green"];
-		elem.title = col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
+		elem.innerHTML = eval(num);
 	}
 }
+
+function getGames(table, games, maxScore, maxLoss) {
+	let matrix = [];
+	for(let i=0; i<maxScore; i++) {
+		matrix[i] = [];
+		for(let j=0; j<maxLoss; j++) {
+			matrix[i][j] = undefined;
+		}
+	}
+	for (const value of Object.values(games)) {
+		// Skips over non-numbers
+		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
+			continue;
+		}
+		let row = Math.min(value["NCSU Score"], value["Opp Score"]);
+		let col = Math.max(value["NCSU Score"], value["Opp Score"]);
+		if (matrix[row][col] === "undefined") {
+			let a = 0;
+			matrix[row][col][a].push([]);
+		}
+		else {
+			let a = matrix[row][col].length;
+		}
+		matrix[row][col][a].push(col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")");
+	}
+}
+
+
+
 
 function loadJsonCallback(data) {
 	let table = document.getElementById("scorigami-table");
