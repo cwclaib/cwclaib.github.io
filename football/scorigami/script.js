@@ -133,7 +133,7 @@ function populateTable(table, games) {
 		arr[loc]++
 		let num = eval(arr[loc]);
 		elem.classList = ["green"];
-		elem.innerHTML = eval(num);
+		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
 	}
 }
 
@@ -174,7 +174,7 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-fetch("https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json")
+fetch("data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
 
