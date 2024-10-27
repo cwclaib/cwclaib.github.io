@@ -157,7 +157,7 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-fetch("https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json")
+fetch("data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
 
