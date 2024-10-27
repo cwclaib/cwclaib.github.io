@@ -121,7 +121,7 @@ function setDefaultColors(table, scores, maxLoss) {
 
 function populateTable(table, games) {
 	const arr = Array(size).fill(0);
-	const arr2 = Array(size).fill([]);
+	arr2 = Array(size).fill([]);
 	for (const value of Object.values(games)) {
 		// Skips over non-numbers
 		if (!isInt(value["NCSU Score"]) || !isInt(value["Opp Score"])) {
@@ -134,22 +134,20 @@ function populateTable(table, games) {
 		let elem = document.getElementById(id);
 		arr[loc]++
 		if (arr2[loc].length === 0) {
-			arr2.splice(loc, 1, col + "-" + row + "\n" + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")");
+			arr2.splice(loc, 1, col + "-" + row + "\n" + value["Date"]  + " - [" + value["Result"] + "] vs " + value["Opponent"]);
 		}
 		else {
-			arr2[loc] += "\n" + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
+			arr2[loc] += "\n" + value["Date"] + " - [" + value["Result"] + "] vs " + value["Opponent"];
 		}
 		let num = eval(arr[loc]);
-		let title = arr2[loc]
+		elem.title = arr2[loc];
 		elem.classList = ["green"];
 		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
-		elem.title = arr2[loc];
 	}
 }
 
+/// addEventListener("click", function(){ console.log( arr2[loc] ) });
 
-
-/// arr1[loc1][a] = col + "-" + row + ": " + value["Date"] + " - vs " + value["Opponent"] + " (" + value["Result"] + ")";
 
 function loadJsonCallback(data) {
 	let table = document.getElementById("scorigami-table");
@@ -159,7 +157,7 @@ function loadJsonCallback(data) {
 	populateTable(table, data["games"]);
 }
 
-fetch("data.json")
+fetch("https://raw.githubusercontent.com/cwclaib/cwclaib.github.io/refs/heads/master/football/scorigami/data.json")
 	.then((response) => response.json())
 	.then((json) => loadJsonCallback(json));
 
