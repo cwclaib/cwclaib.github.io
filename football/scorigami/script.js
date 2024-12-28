@@ -150,7 +150,7 @@ function populateTable(table, games) {
 
 
 function loadJsonCallback(data) {
-	let table = document.getElementById("scorigami-table");
+	let table = document.getElementById(TABLE_ID);
 	let [scores, maxLoss] = getScores(data["games"]);
 	createEmptyTable(table, scores, maxLoss);
 	setDefaultColors(table, scores, maxLoss);
