@@ -7,6 +7,7 @@
 // * Table is only spans from the minimum to maximum score present in the data
 
 TABLE_ID = "scorigami-table"
+SELECTED_SCORES_ID = "selected-scores"
 
 
 function isInt(value) {
@@ -140,9 +141,12 @@ function populateTable(table, games) {
 			arr2[loc] += "\n" + value["Date"] + " - [" + value["Result"] + "] vs " + value["Opponent"];
 		}
 		let num = eval(arr[loc]);
-		elem.title = arr2[loc];
 		elem.classList = ["green"];
 		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
+		elem.onclick = function() {
+			selected_scores = document.getElementById(SELECTED_SCORES_ID)
+			selected_scores.innerText = arr2[loc];
+		}
 	}
 }
 
