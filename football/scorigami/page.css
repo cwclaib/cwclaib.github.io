@@ -36,14 +36,17 @@ td {
 	font-size: 10px;
 }
 
-table {
-	border-spacing: 0;
-	display: block;
-    max-width: fit-content;
-    margin: 0 auto;
-    overflow-x: auto;
-	padding-bottom: 15px;
-	text-align: center;
+/* Don't limit table width when printing */
+@media screen {
+	table {
+		border-spacing: 0;
+		display: block;
+		max-width: fit-content;
+		margin: 0 auto;
+		overflow-x: auto;
+		padding-bottom: 15px;
+		text-align: center;
+	}
 }
 
 tr:hover {
