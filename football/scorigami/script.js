@@ -106,6 +106,11 @@ function getCellClass(row, col) {
 	}
 }
 
+function setSelectedScoresText(text) {
+	selected_scores = document.getElementById(SELECTED_SCORES_ID)
+	selected_scores.innerText = text;
+}
+
 function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	maxScore = Math.max(...scores);
@@ -115,6 +120,9 @@ function setDefaultColors(table, scores, maxLoss) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
 			elem.classList.add(getCellClass(row, col));
+			elem.onclick = function() {
+				setSelectedScoresText("None");
+			}
 		}
 	}
 	return [maxScore, size];
@@ -144,8 +152,7 @@ function populateTable(table, games) {
 		elem.classList = ["green"];
 		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
 		elem.onclick = function() {
-			selected_scores = document.getElementById(SELECTED_SCORES_ID)
-			selected_scores.innerText = arr2[loc];
+			setSelectedScoresText(arr2[loc]);
 		}
 	}
 }
