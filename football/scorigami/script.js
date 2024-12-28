@@ -1,10 +1,10 @@
 // Generates a table from a JSON file, data.json, of scorigami scores
 // Notes:
-// * If duplicate scores are present, only the *last* score that appears in
-//   the list is used (sort the list by date if you want this to be the earliest
-//   game to have that score, either manually or using JS, though you will need
-//   to be sure to have a standard date format in that case)
 // * Table is only spans from the minimum to maximum score present in the data
+//
+// TODO:
+// * Skip large gaps in scores
+// * Make selected score output prettier
 
 TABLE_ID = "scorigami-table"
 SELECTED_SCORES_ID = "selected-scores"
