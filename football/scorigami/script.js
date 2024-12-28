@@ -1,12 +1,13 @@
 // Generates a table from a JSON file, data.json, of scorigami scores
 // Notes:
-// * If duplicate scores are present, only the *last* score that appears in
-//   the list is used (sort the list by date if you want this to be the earliest
-//   game to have that score, either manually or using JS, though you will need
-//   to be sure to have a standard date format in that case)
 // * Table is only spans from the minimum to maximum score present in the data
+//
+// TODO:
+// * Skip large gaps in scores
+// * Make selected score output prettier
 
 TABLE_ID = "scorigami-table"
+SELECTED_SCORES_ID = "selected-scores"
 
 
 function isInt(value) {
@@ -105,6 +106,11 @@ function getCellClass(row, col) {
 	}
 }
 
+function setSelectedScoresText(text) {
+	selected_scores = document.getElementById(SELECTED_SCORES_ID)
+	selected_scores.innerText = text;
+}
+
 function setDefaultColors(table, scores, maxLoss) {
 	let minScore = Math.min(...scores);
 	maxScore = Math.max(...scores);
@@ -114,6 +120,9 @@ function setDefaultColors(table, scores, maxLoss) {
 			let id = getTableEntryId(row, col);
 			let elem = document.getElementById(id);
 			elem.classList.add(getCellClass(row, col));
+			elem.onclick = function() {
+				setSelectedScoresText("None");
+			}
 		}
 	}
 	return [maxScore, size];
@@ -140,9 +149,11 @@ function populateTable(table, games) {
 			arr2[loc] += "\n" + value["Date"] + " - [" + value["Result"] + "] vs " + value["Opponent"];
 		}
 		let num = eval(arr[loc]);
-		elem.title = arr2[loc];
 		elem.classList = ["green"];
 		elem.innerHTML = '<span style="color: white">' + eval(num) + '</span>';
+		elem.onclick = function() {
+			setSelectedScoresText(arr2[loc]);
+		}
 	}
 }
 
@@ -150,7 +161,7 @@ function populateTable(table, games) {
 
 
 function loadJsonCallback(data) {
-	let table = document.getElementById("scorigami-table");
+	let table = document.getElementById(TABLE_ID);
 	let [scores, maxLoss] = getScores(data["games"]);
 	createEmptyTable(table, scores, maxLoss);
 	setDefaultColors(table, scores, maxLoss);
