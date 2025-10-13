@@ -7,24 +7,53 @@
 		<title>Fields Of Play</title>
     </head>
 
-<center>
+<body><center>
 	<h2>Fields Of Play</h2>
 </center>
 
-<p>&emsp;&emsp;<i><a href="../index.html">Return to the main page</a></i></p>
+<p>  <i><a href="https://cwclaib.github.io/football/index.html">Return to the main page</a></i></p>
 
-<body>
+
 <p>Below is a list of fields that NC State has played at from its first season in 1892 through 2025.  In this chart, "Opened" refers to when the field first held events of its primary purpose; this is generally athletics, but gets a bit hazy for some multi-use locations early in the sports' history.  "Closed" refers to when sporting events stopped taking place there, while "Demo'd" (short for Demolished) indicates when a field was torn down.</p>
 
 <p>The Field Status box is color-coded to match a field's present usage; white for fields which remain open and used for athletics, gray for fields which have fully closed and been torn down, red for venues which remain open but no longer host college (or professional) football, and tan for fields which have been abandoned -- they are no longer used in any formal athletic capacity but are yet to be demolished.  If a stadium is actively slated for demolition or replacement, the projected date of closure will be <span style="color:red;"><i><b>red, bolded, and italicized</b></i></span>.</p>
 
 <p>The Comments column will generally be blank, but will contain any major data about a venue's life, usually pertaining to usage as a venue.  If the box is colored purple and contains a note, that means that some consider the venue two distinct fields, but I have combined them.  Usually this happens when a field is torn down and a new one built in almost exactly the same spot as the former.</p>
 
-<p>See an interactive map of the fields I have written about <a href="https://www.google.com/maps/d/u/0/edit?mid=1L8ZIAQY7zqtUJ6ZIJb7LWa9S7AduTtQ&usp=sharing">here</a>.</p>
+<p>Several fields have also changed name over time.  In those instances, I have listed all known names in the chart, with deprecated names pointing towards the venue's most recent name.  Rather than repeating the data for each instance of a renamed field, all columns for older fields are merged and colored neon green; data for the venue can be found under the name indicated.  There is a toggle button to hide duplicate names.  <!--The non-duplicate table can be sorted by location (by state and then city), record, year opened/closed/demo'd, or status-->.</p>
+
+<p>See an interactive map of the fields I have written about <a href="https://www.google.com/maps/d/u/0/edit?mid=1L8ZIAQY7zqtUJ6ZIJb7LWa9S7AduTtQ&amp;usp=sharing">here</a>.</p>
+
+<br>
 
 <center>
-<table>
-<tr>
+
+<button id="toggleButton">Toggle Alternate Names</button>
+
+<br>
+<br>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const toggleButton = document.getElementById('toggleButton');
+	  const table1 = document.getElementById('table1');
+	  const table2 = document.getElementById('table2');
+	  table2.style.display = 'none';
+
+	  toggleButton.addEventListener('click', function() {
+		if (table1.style.display === 'none') {
+		  table1.style.display = 'table'; // Or 'block' if it's not a true table layout
+		  table2.style.display = 'none';
+		} else {
+		  table1.style.display = 'none';
+		  table2.style.display = 'table'; // Or 'block'
+		}
+	  });
+	});
+</script>
+
+<table id="table1">
+<tbody><tr>
 	<th>Field Name</th>
 	<th>Location</th>
 	<th>Record</th>
@@ -35,7 +64,7 @@
 	<th>Comments</th>
 </tr>
 <tr>
-	<td><a href="acrisure-stadium.html">Acrisure Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/acrisure-stadium.html">Acrisure Stadium</a></td>
 	<td>Pittsburgh, PA</td>
 	<td>2-0</td>
 	<td>2001</td>
@@ -47,10 +76,10 @@
 <tr>
 	<td>Adelphia Coliseum</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
 </tr>
 <tr>
-	<td><a href="allegacy-federal-credit-union-stadium.html">Allegacy Federal Credit Union Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/allegacy-federal-credit-union-stadium.html">Allegacy Federal Credit Union Stadium</a></td>
 	<td>Winston-Salem, NC</td>
 	<td>15-14</td>
 	<td>1968</td>
@@ -62,10 +91,10 @@
 <tr>
 	<td>Alltel Stadium</td>
 	<td>Jacksonville, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
 </tr>
 <tr>
-	<td><a href="alumni-field-boston.html">Alumni Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/alumni-field-boston.html">Alumni Field</a></td>
 	<td>Chestnut Hill, MA</td>
 	<td>1-0</td>
 	<td>1915</td>
@@ -77,10 +106,10 @@
 <tr>
 	<td>Alumni Field</td>
 	<td>Lexington, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Foster Stadium - Lexington, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Foster Stadium - Lexington, VA</b></td>
 </tr>
 <tr>
-	<td><a href="alumni-stadium-boston.html">Alumni Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/alumni-stadium-boston.html">Alumni Stadium</a></td>
 	<td>Chestnut Hill, MA</td>
 	<td>3-6</td>
 	<td>1957</td>
@@ -92,10 +121,10 @@
 <tr>
 	<td>American League Park</td>
 	<td>Washington, DC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Griffith Stadium - Washington, DC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Griffith Stadium - Washington, DC</b></td>
 </tr>
 <tr>
-	<td><a href="american-legion-memorial-stadium.html">American Legion Memorial Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/american-legion-memorial-stadium.html">American Legion Memorial Stadium</a></td>
 	<td>Charlotte, NC</td>
 	<td>5-6</td>
 	<td>1936</td>
@@ -105,7 +134,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="american-legion-stadium.html">American Legion Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/american-legion-stadium.html">American Legion Stadium</a></td>
 	<td>Wilmington, NC</td>
 	<td>1-0-1</td>
 	<td>1938 *</td>
@@ -115,12 +144,12 @@
 	<td>* Fully opened in 1940, but events preceeded</td>
 </tr>
 <tr>
-	<td>Archbold Stadium</a></td>
+	<td>Archbold Stadium</td>
 	<td>Syracuse, NY</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>JMA Wireless Dome - Syracuse, NY</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>JMA Wireless Dome - Syracuse, NY</b></td>
 </tr>
 <tr>
-	<td><a href="arizona-stadium.html">Arizona Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/arizona-stadium.html">Arizona Stadium</a></td>
 	<td>Tucson, AZ</td>
 	<td>0-1</td>
 	<td>1923</td>
@@ -130,7 +159,7 @@
 	<td bgcolor="thistle">University Polo Field 1923-1928</td>
 </tr>
 <tr>
-	<td><a href="astrodome.html">Astrodome</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/astrodome.html">Astrodome</a></td>
 	<td>Houston, TX</td>
 	<td>1-0-1</td>
 	<td>1965</td>
@@ -140,7 +169,7 @@
 	<td>Partially demo'd 2013</td>
 </tr>
 <tr>
-	<td><a href="athletic-field-wake-forest.html">Athletic Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-field-wake-forest.html">Athletic Field</a></td>
 	<td>Wake Forest, NC</td>
 	<td>5-0</td>
 	<td>c. 1882</td>
@@ -150,7 +179,7 @@
 	<td>Field of play remains undeveloped</td>
 </tr>
 <tr>
-	<td><a href="athletic-park-atlanta.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-atlanta.html">Athletic Park</a></td>
 	<td>Atlanta, GA</td>
 	<td>0-1</td>
 	<td>1894</td>
@@ -160,7 +189,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="athletic-park-danville.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-danville.html">Athletic Park</a></td>
 	<td>Danville, VA</td>
 	<td>1-0</td>
 	<td>c. 1880</td>
@@ -170,7 +199,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="athletic-park-greensboro.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-greensboro.html">Athletic Park</a></td>
 	<td>Greensboro, NC</td>
 	<td>2-0</td>
 	<td>1893</td>
@@ -180,7 +209,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="athletic-park-raleigh.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-raleigh.html">Athletic Park</a></td>
 	<td>Raleigh, NC</td>
 	<td>4-2-1</td>
 	<td>1889</td>
@@ -190,7 +219,7 @@
 	<td>Limited games after abandonment</td>
 </tr>
 <tr>
-	<td><a href="athletic-park-roanoke.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-roanoke.html">Athletic Park</a></td>
 	<td>Roanoke, VA</td>
 	<td>1-0</td>
 	<td>1893</td>
@@ -200,7 +229,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="athletic-park-rock-hill.html">Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-rock-hill.html">Athletic Park</a></td>
 	<td>Rock Hill, SC</td>
 	<td>0-1</td>
 	<td>1896</td>
@@ -210,7 +239,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="atlanta-fulton-county-stadium.html">Atlanta-Fulton County Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/atlanta-fulton-county-stadium.html">Atlanta-Fulton County Stadium</a></td>
 	<td>Atlanta, GA</td>
 	<td>3-3</td>
 	<td>1965</td>
@@ -222,10 +251,10 @@
 <tr>
 	<td>Bain Field</td>
 	<td>Norfolk, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>League Park III - Norfolk, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>League Park III - Norfolk, VA</b></td>
 </tr>
 <tr>
-	<td><a href="bank-of-america-stadium.html">Bank of America Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/bank-of-america-stadium.html">Bank of America Stadium</a></td>
 	<td>Charlotte, NC</td>
 	<td>3-7</td>
 	<td>1996</td>
@@ -235,7 +264,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="baujan-field.html">Baujan Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/baujan-field.html">Baujan Field</a></td>
 	<td>Dayton, OH</td>
 	<td>1-0</td>
 	<td>1925</td>
@@ -247,10 +276,10 @@
 <tr>
 	<td>BB&amp;T Field</td>
 	<td>Winston-Salem, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
 </tr>
 <tr>
-	<td><a href="beaver-stadium.html">Beaver Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/beaver-stadium.html">Beaver Stadium</a></td>
 	<td>State College, PA</td>
 	<td>1-8</td>
 	<td>1960</td>
@@ -260,7 +289,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="ben-hill-griffin-stadium.html">Ben Hill Griffin Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/ben-hill-griffin-stadium.html">Ben Hill Griffin Stadium</a></td>
 	<td>Gainesville, FL</td>
 	<td>0-2</td>
 	<td>1930</td>
@@ -272,10 +301,10 @@
 <tr>
 	<td>Blackwell's Park</td>
 	<td>Durham, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Trinity Park - Durham, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Trinity Park - Durham, NC</b></td>
 </tr>
 <tr>
-	<td><a href="bobby-dodd-stadium.html">Bobby Dodd Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/bobby-dodd-stadium.html">Bobby Dodd Stadium</a></td>
 	<td>Atlanta, GA</td>
 	<td>4-12</td>
 	<td>1913</td>
@@ -287,15 +316,15 @@
 <tr>
 	<td>Boston College Stadium</td>
 	<td>Chestnut Hill, MA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Alumni Field - Chestnut Hill, MA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Alumni Field - Chestnut Hill, MA</b></td>
 </tr>
 <tr>
 	<td>Boston University Field</td>
 	<td>Boston, MA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
 </tr>
 <tr>
-	<td><a href="boulevard-field.html">Boulevard Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/boulevard-field.html">Boulevard Field</a></td>
 	<td>Richmond, VA</td>
 	<td>1-0</td>
 	<td>1912</td>
@@ -307,10 +336,10 @@
 <tr>
 	<td>Bounce House</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
 </tr>
 <tr>
-	<td><a href="bowman-field.html">Bowman Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/bowman-field.html">Bowman Field</a></td>
 	<td>Clemson, SC</td>
 	<td>0-1</td>
 	<td>1896</td>
@@ -320,7 +349,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="bowman-gray-stadium.html">Bowman Gray Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/bowman-gray-stadium.html">Bowman Gray Stadium</a></td>
 	<td>Winston-Salem, NC</td>
 	<td>3-4</td>
 	<td>1937</td>
@@ -332,15 +361,15 @@
 <tr>
 	<td>Braves Field</td>
 	<td>Boston, MA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
 </tr>
 <tr>
 	<td>Bright House Networks Stadium</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
 </tr>
 <tr>
-	<td><a href="broad-street-park-i.html">Broad Street Park (I)</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/broad-street-park-i.html">Broad Street Park (I)</a></td>
 	<td>Richmond, VA</td>
 	<td>1-1</td>
 	<td>1897</td>
@@ -350,7 +379,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="broad-street-park-ii.html">Broad Street Park (II)</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/broad-street-park-ii.html">Broad Street Park (II)</a></td>
 	<td>Richmond, VA</td>
 	<td>0-1</td>
 	<td>1913</td>
@@ -360,7 +389,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="bryant-denny-stadium.html">Bryant-Denny Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/bryant-denny-stadium.html">Bryant-Denny Stadium</a></td>
 	<td>Tuscaloosa, AL</td>
 	<td>0-4</td>
 	<td>1929</td>
@@ -372,15 +401,26 @@
 <tr>
 	<td>Burdine Stadium</td>
 	<td>Miami, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Miami Orange Bowl - Miami, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Miami Orange Bowl - Miami, FL</b></td>
 </tr>
 <tr>
-	<td>Byrd Stadium</td>
+	<td>Byrd Stadium I</td>	
+	<!-- maybe??? https://d.lib.ncsu.edu/collections/catalog/ua023_004-005-am0049-000-009#?c=&m=&cv=&xywh=182%2C492%2C3771%2C1317 -->
 	<td>College Park, MD</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>SECU Stadium - College Park, MD</b></td>
+	<td>0-0-2</td>
+	<td>1923</td>
+	<td>1949</td>
+	<td>1953</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>SECU Stadium</b></td>
+	<td>   </td>
 </tr>
 <tr>
-	<td><a href="california-memorial-stadium.html">California Memorial Stadium</a></td>
+	<td>Byrd Stadium II</td>
+	<td>College Park, MD</td>
+	<td colspan="6" bgcolor="aquamarine">See <b>SECU Stadium - College Park, MD</b></td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/california-memorial-stadium.html">California Memorial Stadium</a></td>
 	<td>Berkeley, CA</td>
 	<td>1-0</td>
 	<td>1923</td>
@@ -390,7 +430,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="camp-davis-athletic-field.html">Camp Davis Athletic Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/camp-davis-athletic-field.html">Camp Davis Athletic Field</a></td>
 	<td>Holly Ridge, NC</td>
 	<td>0-1</td>
 	<td>1943</td>
@@ -400,7 +440,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="camping-world-stadium.html">Camping World Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/camping-world-stadium.html">Camping World Stadium</a></td>
 	<td>Orlando, FL</td>
 	<td>3-2</td>
 	<td>1936</td>
@@ -412,10 +452,10 @@
 <tr>
 	<td>Campus Athletic Field</td>
 	<td>Greenville, SC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>University Grounds - Greenville, SC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>University Grounds - Greenville, SC</b></td>
 </tr>
 <tr>
-	<td><a href="old-campus-athletic-field.html">Campus Athletic Field I</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/old-campus-athletic-field.html">Campus Athletic Field I</a></td>
 	<td>Chapel Hill, NC</td>
 	<td>0-7</td>
 	<td>c. 1888</td>
@@ -427,30 +467,40 @@
 <tr>
 	<td>Campus Athletic Field II</td>
 	<td>Chapel Hill, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Emerson Field - Chapel Hill, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Emerson Field - Chapel Hill, NC</b></td>
 </tr>
 <tr>
-	<td>Cardinal Stadium</td>
+	<td>Cardinal Stadium I</td>
 	<td>Louisville, KY</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>L&amp;N Federal Credit Union Stadium - Louisville, KY</b></td>
+	<td>0-1</td>
+	<td>1956</td>
+	<td>2014</td>
+	<td>2019</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>L&amp;N FCU Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Cardinal Stadium II</td>
+	<td>Louisville, KY</td>
+	<td colspan="6" bgcolor="aquamarine">See <b>L&amp;N Federal Credit Union Stadium - Louisville, KY</b></td>
 </tr>
 <tr>
 	<td>Cardozo Stadium</td>
 	<td>Washington, DC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
 </tr>
 <tr>
 	<td>Carrier Dome</td>
 	<td>Syracuse, NY</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>JMA Wireless Dome - Syracuse, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>JMA Wireless Dome - Syracuse, NC</b></td>
 </tr>
 <tr>
 	<td>Carson Field</td>
 	<td>Cincinnati, OH</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nippert Stadium - Cincinnati, OH</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nippert Stadium - Cincinnati, OH</b></td>
 </tr>
 <tr>
-	<td><a href="carter-finley-stadium.html">Carter-Finley Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/carter-finley-stadium.html">Carter-Finley Stadium</a></td>
 	<td>Raleigh, NC</td>
 	<td>241-126-6</td>
 	<td>1966</td>
@@ -462,10 +512,10 @@
 <tr>
 	<td>Cary Field</td>
 	<td>Williamsburg, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Zable Stadium - Williamsburg, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Zable Stadium - Williamsburg, VA</b></td>
 </tr>
 <tr>
-	<td><a href="central-carolina-fair-grounds.html">Central Carolina Fair Grounds</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/central-carolina-fair-grounds.html">Central Carolina Fair Grounds</a></td>
 	<td>Greensboro, NC</td>
 	<td>1-1</td>
 	<td>1900</td>
@@ -475,7 +525,7 @@
 	<td>No documented football after 1901</td>
 </tr>
 <tr>
-	<td><a href="central-high-school-field-charlotte.html">Central High School Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/central-high-school-field-charlotte.html">Central High School Field</a></td>
 	<td>Charlotte, NC</td>
 	<td>1-2</td>
 	<td>1929</td>
@@ -487,10 +537,10 @@
 <tr>
 	<td>Central High School Stadium</td>
 	<td>Washington, DC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
 </tr>
 <tr>
-	<td><a href="chamberlain-field.html">Chamberlain Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/chamberlain-field.html">Chamberlain Field</a></td>
 	<td>Chattanooga, TN</td>
 	<td>1-0</td>
 	<td>1908</td>
@@ -502,10 +552,10 @@
 <tr>
 	<td>Citrus Bowl</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
 </tr>
 <tr>
-	<td><a href="city-stadium-lynchburg.html">City Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/city-stadium-lynchburg.html">City Stadium</a></td>
 	<td>Lynchburg, VA</td>
 	<td>0-0</td>
 	<td>1894</td>
@@ -516,7 +566,7 @@
 	<!-- https://en.wikipedia.org/wiki/City_Stadium_(Lynchburg) -->
 </tr>
 <tr>
-	<td><a href="city-stadium.html">City Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/city-stadium.html">City Stadium</a></td>
 	<td>Richmond, VA</td>
 	<td>3-1</td>
 	<td>1929</td>
@@ -528,20 +578,20 @@
 <tr>
 	<td>The Coliseum</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
 </tr>
 <tr>
 	<td>College Field</td>
 	<td>East Lansing, MI</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Spartan Stadium - East Lansing, MI</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Spartan Stadium - East Lansing, MI</b></td>
 </tr>
 <tr>
 	<td>College Park</td>
 	<td>Columbia, SC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Davis Field - Columbia, SC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Davis Field - Columbia, SC</b></td>
 </tr>
 <tr>
-	<td><a href="cone-athletic-park.html">Cone Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/cone-athletic-park.html">Cone Athletic Park</a></td>
 	<td>Greensboro, NC</td>
 	<td>0-1</td>
 	<td>1902</td>
@@ -551,7 +601,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="cotton-bowl.html">Cotton Bowl</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/cotton-bowl.html">Cotton Bowl</a></td>
 	<td>Dallas, TX</td>
 	<td>0-1</td>
 	<td>1886 *</td>
@@ -561,7 +611,7 @@
 	<td bgcolor="thistle">* Arguably four venues, starting 1886, 1903, 1921, 1930</td>
 </tr>
 <tr>
-	<td><a href="curry-field.html">Curry Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/curry-field.html">Curry Field</a></td>
 	<!--     # https://v3.lib.virginia.edu/sources/uva_library/items/u126747?idx=24&x=1.21&y=0.616&zoom=0.789&page=218 Old Dudley Field (check dates)-->
 	<td>Nashville, TN</td>
 	<td>0-0</td>
@@ -582,7 +632,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="davis-field.html">Davis Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/davis-field.html">Davis Field</a></td>
 	<td>Columbia, SC</td>
 	<td>0-2</td>
 	<td>c. 1897</td>
@@ -592,7 +642,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="davis-wade-stadium.html">Davis Wade Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/davis-wade-stadium.html">Davis Wade Stadium</a></td>
 	<td>Starkville, MS</td>
 	<td>1-1</td>
 	<td>1914</td>
@@ -604,15 +654,15 @@
 <tr>
 	<td>Dayton Stadium</td>
 	<td>Dayton, OH</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Baujan Stadium - Dayton, OH</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Baujan Stadium - Dayton, OH</b></td>
 </tr>
 <tr>
 	<td>Denny Stadium</td>
 	<td>Tuscaloosa, AL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Bryant-Denny Stadium - Tuscaloosa, AL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Bryant-Denny Stadium - Tuscaloosa, AL</b></td>
 </tr>
 <tr>
-	<td><a href="doak-campbell-stadium.html">Doak Campbell Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/doak-campbell-stadium.html">Doak Campbell Stadium</a></td>
 	<td>Tallahassee, FL</td>
 	<td>6-12</td>
 	<td>1950</td>
@@ -624,10 +674,10 @@
 <tr>
 	<td>Dolphins Stadium</td>
 	<td>Miami Gardens, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
 </tr>
 <tr>
-	<td><a href="dowdy-ficklen-stadium.html">Dowdy-Ficklen Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/dowdy-ficklen-stadium.html">Dowdy-Ficklen Stadium</a></td>
 	<td>Greenville, NC</td>
 	<td>2-3</td>
 	<td>1963</td>
@@ -639,12 +689,12 @@
 <tr>
 	<td>Dudley Field I</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Curry Field - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Curry Field - Nashville, TN</b></td>
 </tr>
 <tr>
 	<td>Dudley Field II</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>FirstBank Stadium - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>FirstBank Stadium - Nashville, TN</b></td>
 </tr>
 <tr>
 	<td>Ebbets Field</td>
@@ -657,7 +707,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="emerson-field.html">Emerson Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/emerson-field.html">Emerson Field</a></td>
 	<td>Chapel Hill, NC</td>
 	<td>0-2-1</td>
 	<td>1900</td>
@@ -669,25 +719,25 @@
 <tr>
 	<td>Emory M. Wilson Memorial Stadium</td>
 	<td>Washington, DC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Sal Hall Stadium - Washington, DC</b></td>
 </tr>
 <tr>
 	<td>Ericsson Stadium</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Bank of America Stadium - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Bank of America Stadium - Charlotte, NC</b></td>
 </tr>
 <tr>
-	<td><a href="everbank-stadium.html">EverBank Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/everbank-stadium.html">EverBank Stadium</a></td>
 	<td>Jacksonville, FL</td>
 	<td>1-5</td>
 	<td>1924</td>
 	<td>   </td>
 	<td> </td>
-	<td>Open</b></td>
+	<td>Open</td>
 	<td bgcolor="thistle">New stadiums 1926 and 1995</td>
 </tr>
 <tr>
-	<td><a href="fair-grounds-columbia-i.html">Fair Grounds I</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-columbia-i.html">Fair Grounds I</a></td>
 	<td>Columbia, SC</td>
 	<td>0-1</td>
 	<td>1856</td>
@@ -699,10 +749,10 @@
 <tr>
 	<td>Fair Grounds I</td>
 	<td>Roanoke, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Athletic Park - Roanoke, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Athletic Park - Roanoke, VA</b></td>
 </tr>
 <tr>
-	<td><a href="fair-grounds-columbia-ii.html">Fair Grounds II</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-columbia-ii.html">Fair Grounds II</a></td>
 	<td>Columbia, SC</td>
 	<td>0-0-1</td>
 	<td>1904</td>
@@ -714,10 +764,10 @@
 <tr>
 	<td>Fair Grounds II</td>
 	<td>Lynchburg, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>City Stadium - Lynchburg, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>City Stadium - Lynchburg, VA</b></td>
 </tr>
 <tr>
-	<td><a href="fair-grounds-raleigh.html">Fair Grounds II</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-raleigh.html">Fair Grounds II</a></td>
 	<td>Raleigh, NC</td>
 	<td>14-7-5</td>
 	<td>1873</td>
@@ -729,20 +779,20 @@
 <tr>
 	<td>Fair Grounds II</td>
 	<td>Roanoke, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Maher Field I - Roanoke, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Maher Field I - Roanoke, VA</b></td>
 </tr>
 <tr>
 	<td>Fair Park Stadium</td>
 	<td>Dallas, TX</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Cotton Bowl - Dallas, TX</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Cotton Bowl - Dallas, TX</b></td>
 </tr>
 <tr>
 	<td>Fairfield Stadium</td>
 	<td>Jacksonville, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
 </tr>
 <tr>
-	<td><a href="fairview-park.html">Fairview Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/fairview-park.html">Fairview Park</a></td>
 	<td>Winston-Salem, NC</td>
 	<td>1-0</td>
 	<td>1905</td>
@@ -811,7 +861,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="firstbank-stadium.html">FirstBank Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/firstbank-stadium.html">FirstBank Stadium</a></td>
 	<td>Nashville, TN</td>
 	<td>0-1</td>
 	<td>1922</td>
@@ -833,7 +883,7 @@
 <tr>
 	<td>Florida Stadium</td>
 	<td>Gainesville, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Ben Hill Griffin Stadium - Gainesville, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Ben Hill Griffin Stadium - Gainesville, FL</b></td>
 </tr>
 <tr>
 	<td>Floyd Casey Stadium</td>
@@ -861,10 +911,10 @@
 <tr>
 	<td>Foreman Field</td>
 	<td>Norfolk, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>S. B. Ballard Stadium - Norfolk, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>S. B. Ballard Stadium - Norfolk, VA</b></td>
 </tr>
 <tr>
-	<td><a href="foster-stadium.html">Foster Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/foster-stadium.html">Foster Stadium</a></td>
 	<td>Lexington, VA</td>
 	<td>1-1</td>
 	<td>1921</td>
@@ -896,13 +946,12 @@
 <tr>
 	<td>Gator Bowl Stadium</td>
 	<td>Jacksonville, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
 </tr>
 <tr>
 	<td>George Washington High School Stadium</td>
 	<!-- https://media.alexandriava.gov/docs-archives/historic/info/attic/2009/attic20091008gwstadium.pdf -->
-	<!-- https://facilities.facilitron.com/60f8359e132ccd0044d2e514 -->.
-	<!-- http://users.erols.com/dlbeach/sheetlast.html -->
+	<!-- https://facilities.facilitron.com/60f8359e132ccd0044d2e514 --><!-- http://users.erols.com/dlbeach/sheetlast.html -->
 	<!-- https://www.dhr.virginia.gov/wp-content/uploads/2020/09/100-0160_George_Washington_High_School_2020_NRHP_FINAL.pdf -->
 	<td>Alexandria, VA</td>
 	<td>0-1</td>
@@ -972,7 +1021,7 @@
 <tr>
 	<td>Gibboney Field</td>
 	<td>Blacksburg, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Miles Field - Blacksburg, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Miles Field - Blacksburg, VA</b></td>
 </tr>
 <tr>
 	<td>Gore Field</td>
@@ -1007,7 +1056,7 @@
 <tr>
 	<td>Grant Field</td>
 	<td>Atlanta, GA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Bobby Dodd Stadium - Atlanta, GA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Bobby Dodd Stadium - Atlanta, GA</b></td>
 </tr>
 <tr>
 	<td>Griffith Stadium</td><!--
@@ -1026,25 +1075,25 @@
 <tr>
 	<td>Groves Field</td>
 	<td>Winston-Salem, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
 </tr>
 <tr>
 	<td>Groves Stadium</td>
 	<td>Wake Forest, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Trentini Stadium - Wake Forest, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Trentini Stadium - Wake Forest, NC</b></td>
 </tr>
 <tr>
 	<td>Hanes Field I</td>
 	<td>Durham, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Trinity Park - Durham, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Trinity Park - Durham, NC</b></td>
 </tr>
 <tr>
 	<td>Hanes Field II</td>
 	<td>Durham, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Jack Katz Stadium - Durham, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Jack Katz Stadium - Durham, NC</b></td>
 </tr>
 <tr>
-	<td><a href="hard-rock-stadium.html">Hard Rock Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/hard-rock-stadium.html">Hard Rock Stadium</a></td>
 	<td>Miami Gardens, FL</td>
 	<td>1-3</td>
 	<td>1987</td>
@@ -1056,12 +1105,12 @@
 <tr>
 	<td>Hayman Park</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
 </tr>
 <tr>
 	<td>Heinz Field</td>
 	<td>Pittsburgh, PA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Acrisure Stadium - Pittsburgh, PA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Acrisure Stadium - Pittsburgh, PA</b></td>
 </tr>
 <tr>
 	<td>Herty Field</td>
@@ -1095,24 +1144,24 @@
 	<td>Stands removed 1911</td>
 </tr>
 <tr>
-	<td><a href="hilton-park.html">Hilton Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/hilton-park.html">Hilton Park</a></td>
 	<td>Wilmington, NC</td>
 	<td>1-0</td>
 	<td>1881</td>
 	<td>c. 1943</td>
 	<td>c. 1943</td>
-	<td bgcolor="gainsboro">Defunct</b></td>
+	<td bgcolor="gainsboro">Defunct</td>
 	<td>Possibly unused c. 1920-1940</td>
 </tr>
 <tr>
 	<td>Hyundai Field</td>
 	<td>Atlanta, GA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Bobby Dodd Stadium - Atlanta, GA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Bobby Dodd Stadium - Atlanta, GA</b></td>
 </tr>
 <tr>
 	<td>Iowa Stadium</td>
 	<td>Iowa City, IA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Kinnick Stadium - Iowa City, IA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Kinnick Stadium - Iowa City, IA</b></td>
 </tr>
 <tr>
 	<td>Independence Stadium</td>
@@ -1127,10 +1176,10 @@
 <tr>
 	<td>Island Park</td>
 	<td>Richmond, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Tate Field - Richmond, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Tate Field - Richmond, VA</b></td>
 </tr>
 <tr>
-	<td><a href="jack-katz-stadium.html">Jack Katz Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/jack-katz-stadium.html">Jack Katz Stadium</a></td>
 	<td>Durham, NC</td>
 	<td>2-0</td>
 	<td>1911 *</td>
@@ -1140,7 +1189,7 @@
 	<td>* Not formally opened til 1915</td>
 </tr>
 <tr>
-	<td><a href="JMA-wireless-dome.html">JMA Wireless Dome</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/JMA-wireless-dome.html">JMA Wireless Dome</a></td>
 	<td>Syracuse, NY</td>
 	<td>6-2</td>
 	<td>1907</td>
@@ -1162,12 +1211,12 @@
 <tr>
 	<td>Joe Robbie Stadium</td>
 	<td>Miami Gardens, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
 </tr>
 <tr>
 	<td>John F. Kennedy Stadium</td>
 	<td>Philadelphia, PA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Wells Fargo Center - Philadelphia, PA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Wells Fargo Center - Philadelphia, PA</b></td>
 </tr>
 <tr>
 	<td>Johnson Hagood Stadium</td>
@@ -1192,7 +1241,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="jordan-hare-stadium.html">Jordan-Hare Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/jordan-hare-stadium.html">Jordan-Hare Stadium</a></td>
 	<td>Auburn, AL</td>
 	<td>1-1</td>
 	<td>1939</td>
@@ -1202,7 +1251,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="kenan-memorial-stadium.html">Kenan Memorial Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/kenan-memorial-stadium.html">Kenan Memorial Stadium</a></td>
 	<td>Chapel Hill, NC</td>
 	<td>23-29-1</td>
 	<td>1927</td>
@@ -1222,7 +1271,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="cardinal-stadium.html">L&amp;N Federal Credit Union Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/cardinal-stadium.html">L&amp;N Federal Credit Union Stadium</a></td>
 	<td>Louisville, KY</td>
 	<td>1-3</td>
 	<td>1998</td>
@@ -1243,7 +1292,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="lafayette-field.html">Lafayette Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/lafayette-field.html">Lafayette Field</a></td>
 	<td>Norfolk, VA</td>
 	<td>4-3</td>
 	<td>1902</td>
@@ -1287,10 +1336,10 @@
 <tr>
 	<td>Land Shark Stadium</td>
 	<td>Miami Gardens, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
 </tr>
 <tr>
-	<td><a href="lane-stadium.html">Lane Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/lane-stadium.html">Lane Stadium</a></td>
 	<!-- https://digitalsc.lib.vt.edu/VPIFilmVault/A%20224 -->
 	<td>Blacksburg, VA</td>
 	<td>2-4-1</td>
@@ -1301,7 +1350,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="latta-park-i.html">Latta Park I</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/latta-park-i.html">Latta Park I</a></td>
 	<td>Charlotte, NC</td>
 	<td>1-1-2</td>
 	<td>1870</td>
@@ -1311,7 +1360,7 @@
 	<td bgcolor="thistle">Mecklenburg Fairgrounds 1870-1890</td>
 </tr>
 <tr>
-	<td><a href="latta-park-ii.html">Latta Park II</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/latta-park-ii.html">Latta Park II</a></td>
 	<td>Charlotte, NC</td>
 	<td>1-0</td>
 	<td>1908</td>
@@ -1323,15 +1372,15 @@
 <tr>
 	<td>League Park I</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Latta Park II - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Latta Park II - Charlotte, NC</b></td>
 </tr>
 <tr>
 	<td>League Park II</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
 </tr>
 <tr>
-	<td><a href="league-park.html">League Park III</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/league-park.html">League Park III</a></td>
 	<td>Norfolk, VA</td>
 	<td>3-9-1</td>
 	<td>1913</td>
@@ -1343,10 +1392,10 @@
 <tr>
 	<td>Lee Park</td>
 	<td>Richmond, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Boulevard Field - Richmond, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Boulevard Field - Richmond, VA</b></td>
 </tr>
 <tr>
-	<td><a href="legion-field.html">Legion Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/legion-field.html">Legion Field</a></td>
 	<td>Birmingham, AL</td>
 	<td>1-1</td>
 	<td>1927</td>
@@ -1358,7 +1407,7 @@
 <tr>
 	<td>Liberty Bowl Stadium</td>
 	<td>Memphis, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Simmons Bank Liberty Stadium - Memphis, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Simmons Bank Liberty Stadium - Memphis, TN</b></td>
 </tr>
 <tr>
 	<td>Liversedge Field</td>
@@ -1400,7 +1449,7 @@
 <tr>
 	<td>LP Field</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nissan Stadium - Nashville, TN</b></td>
 </tr>
 <tr>
 	<td>Los Angeles Memorial Coliseum</td>
@@ -1423,7 +1472,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="maher-field.html">Maher Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/maher-field.html">Maher Field</a></td>
 	<td>Roanoke, VA</td>
 	<td>1-1</td>
 	<td>1906</td>
@@ -1433,7 +1482,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="manly-field.html">Manly Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/manly-field.html">Manly Field</a></td>
 	<td>Greenville, SC</td>
 	<td>0-1</td>
 	<td>1919</td>
@@ -1445,12 +1494,12 @@
 <tr>
 	<td>Maryland Stadium</td>
 	<td>College Park, MD</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>SECU Stadium - College Park, MD</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>SECU Stadium - College Park, MD</b></td>
 </tr>
 <tr>
 	<td>Mayo Island Park</td>
 	<td>Richmond, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Tate Field - Richmond, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Tate Field - Richmond, VA</b></td>
 </tr>
 <tr>
 	<td>McLean Stadium</td>
@@ -1465,15 +1514,15 @@
 <tr>
 	<td>McLelland Field</td>
 	<td>Roanoke, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Victory Stadium - Roanoke, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Victory Stadium - Roanoke, VA</b></td>
 </tr>
 <tr>
 	<td>Mecklenburg Fairgrounds</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Latta Park I - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Latta Park I - Charlotte, NC</b></td>
 </tr>
 <tr>
-	<td><a href="melton-field.html">Melton Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/melton-field.html">Melton Field</a></td>
 	<td>Columbia, SC</td>
 	<td>1-4</td>
 	<td>1924</td>
@@ -1508,7 +1557,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="memorial-stadium-clemson.html">Memorial Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/memorial-stadium-clemson.html">Memorial Stadium</a></td>
 	<td>Clemson, SC</td>
 	<td>11-25</td>
 	<td>1942</td>
@@ -1530,7 +1579,7 @@
 <tr>
 	<td>Memphis Memorial Stadium</td>
 	<td>Memphis, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Simmons Bank Liberty Stadium - Memphis, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Simmons Bank Liberty Stadium - Memphis, TN</b></td>
 </tr>
 <tr>
 	<td>Miami Orange Bowl</td>
@@ -1564,7 +1613,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="miles-field.html">Miles Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/miles-field.html">Miles Field</a></td>
 	<td>Blacksburg, VA</td>
 	<td>0-2-1</td>
 	<td>1894</td>
@@ -1574,7 +1623,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="miles-stadium.html">Miles Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/miles-stadium.html">Miles Stadium</a></td>
 	<td>Blacksburg, VA</td>
 	<td>1-4</td>
 	<td>1926</td>
@@ -1626,7 +1675,7 @@
 <tr>
 	<td>National League Park</td>
 	<td>Boston, MA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Nickerson Field - Boston, MA</b></td>
 </tr>
 <tr>
 	<td>Navy-Marine Corps Memorial Stadium</td>
@@ -1639,7 +1688,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="new-beaver-field.html">New Beaver Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/new-beaver-field.html">New Beaver Field</a></td>
 	<td>State College, PA</td>
 	<td>0-5</td>
 	<td>1909</td>
@@ -1649,7 +1698,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="nickerson-field.html">Nickerson Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/nickerson-field.html">Nickerson Field</a></td>
 	<td>Boston, MA</td>
 	<td>1-0</td>
 	<td>1915</td>
@@ -1669,7 +1718,7 @@
 	<td bgcolor="thistle">Carson Field 1901-1924</td>
 </tr>
 <tr>
-	<td><a href="nissan-stadium.html">Nissan Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/nissan-stadium.html">Nissan Stadium</a></td>
 	<td>Nashville, TN</td>
 	<td>0-1</td>
 	<td>1999</td>
@@ -1679,7 +1728,7 @@
 	<td>New Nissan Stadium planned 2027</td>
 </tr>
 <tr>
-	<td><a href="norfolk-athletic-park.html">Norfolk Athletic Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/norfolk-athletic-park.html">Norfolk Athletic Park</a></td>
 	<td>Norfolk, VA</td>
 	<td>0-1</td>
 	<td>1908</td>
@@ -1722,32 +1771,6 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td>"Old" Byrd Stadium</td>
-	<!-- maybe??? https://d.lib.ncsu.edu/collections/catalog/ua023_004-005-am0049-000-009#?c=&m=&cv=&xywh=182%2C492%2C3771%2C1317 -->
-	<td>College Park, MD</td>
-	<td>0-0-2</td>
-	<td>1923</td>
-	<td>1949</td>
-	<td>1953</td>
-	<td bgcolor="gainsboro">Defunct; replaced by <b>SECU Stadium</b></td>
-	<td>   </td>
-</tr>
-<tr>
-	<td>"Old" Campus Athletic Field</td>
-	<td>Chapel Hill, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Campus Athletic Field I - Chapel Hill, NC</b></td>
-</tr>
-<tr>
-	<td>"Old" Cardinal Stadium</td>
-	<td>Louisville, KY</td>
-	<td>0-1</td>
-	<td>1956</td>
-	<td>2014</td>
-	<td>2019</td>
-	<td bgcolor="gainsboro">Defunct; replaced by <b>L&amp;N FCU Stadium</b></td>
-	<td>   </td>
-</tr>
-<tr>
 	<td>Oriole Park V</td>
 	<!--
 	    # https://lib.digitalnc.org/record/27476?ln=en#?xywh=1648%2C1662%2C2601%2C1024&cv=153
@@ -1764,20 +1787,20 @@
 <tr>
 	<td>Orlando Stadium</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
 </tr>
 <tr>
 	<td>Owen Field</td>
 	<td>Norman, OK</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Oklahoma Memorial Stadium - Norman, OK</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Oklahoma Memorial Stadium - Norman, OK</b></td>
 </tr>
 <tr>
 	<td>Papa John's Cardinal Stadium</td>
 	<td>Louisville, KY</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>L&amp;N Federal Credit Union Stadium - Louisville, KY</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>L&amp;N Federal Credit Union Stadium - Louisville, KY</b></td>
 </tr>
 <tr>
-	<td><a href="parade-ground-vmi.html">Parade Ground</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/parade-ground-vmi.html">Parade Ground</a></td>
 	<td>Lexington, VA</td>
 	<td>3-3</td>
 	<td>1839</td>
@@ -1884,12 +1907,12 @@
 <tr>
 	<td>Philadelphia Municipal Stadium</td>
 	<td>Philadelphia, PA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Wells Fargo Center - Philadelphia, PA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Wells Fargo Center - Philadelphia, PA</b></td>
 </tr>
 <tr>
 	<td>Phillips Field</td>
 	<td>Tampa, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Shimberg Field - Tampa, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Shimberg Field - Tampa, FL</b></td>
 </tr>
 <tr>
 	<td>Piedmont Park</td>
@@ -1940,10 +1963,10 @@
 <tr>
 	<td>Plant Field</td>
 	<td>Tampa, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Pepin Stadium - Tampa, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Pepin Stadium - Tampa, FL</b></td>
 </tr>
 <tr>
-	<td><a href="playing-fields-oak-ridge.html">Playing Fields</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/playing-fields-oak-ridge.html">Playing Fields</a></td>
 	<td>Oak Ridge, NC</td>
 	<td>2-0</td>
 	<td>c. 1891</td>
@@ -1955,15 +1978,15 @@
 <tr>
 	<td>Post Athletic Field</td>
 	<td>Holly Ridge, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Camp Davis Athletic Field - Holly Ridge, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Camp Davis Athletic Field - Holly Ridge, NC</b></td>
 </tr>
 <tr>
 	<td>Pro Player Stadium</td>
 	<td>Miami Gardens, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
 </tr>
 <tr>
-	<td><a href="pullen-park.html">Pullen Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/pullen-park.html">Pullen Park</a></td>
 	<td>Raleigh, NC</td>
 	<td>0-1</td>
 	<td>1900 *</td>
@@ -1985,7 +2008,7 @@
 <tr>
 	<td>Red Diamond</td>
 	<td>Raleigh, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Pullen Park - Raleigh, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Pullen Park - Raleigh, NC</b></td>
 </tr>
 <tr>
 	<td>Rentschler Field</td>
@@ -2013,10 +2036,10 @@
 <tr>
 	<td>Richmond Public Stadium</td>
 	<td>Richmond, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>City Stadium - Richmond, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>City Stadium - Richmond, VA</b></td>
 </tr>
 <tr>
-	<td><a href="riddick-field.html">Riddick Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/riddick-field.html">Riddick Field</a></td>
 	<td>Raleigh, NC</td>
 	<td>131-92-17</td>
 	<td>1906</td>
@@ -2026,7 +2049,7 @@
 	<td>* Non-college only 1966-67; ** Completed 2013</td>
 </tr>
 <tr>
-	<td><a href="riggs-field.html">Riggs Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/riggs-field.html">Riggs Field</a></td>
 	<td>Clemson, SC</td>
 	<td>0-2</td>
 	<td>1915</td>
@@ -2038,12 +2061,12 @@
 <tr>
 	<td>Roanoke Municipal Stadium</td>
 	<td>Roanoke, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Victory Stadium - Roanoke, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Victory Stadium - Roanoke, VA</b></td>
 </tr>
 <tr>
 	<td>Robbie's Field</td>
 	<td>Charlotte, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Wearn Field - Charlotte, NC</b></td>
 </tr>
 <tr>
 	<td>Ross-Ade Stadium</td>
@@ -2081,7 +2104,7 @@
 	<td bgcolor="thistle">Foreman Field 1936-2009</td>
 </tr>
 <tr>
-	<td><a href="sal-hall-stadium.html">Sal Hall Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/sal-hall-stadium.html">Sal Hall Stadium</a></td>
 	<td>Washington, DC</td>
 	<td>1-0</td>
 	<td>1917</td>
@@ -2134,7 +2157,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="scott-stadium.html">Scott Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/scott-stadium.html">Scott Stadium</a></td>
 	<td>Charlottesville, VA</td>
 	<td>17-9</td>
 	<td>1931</td>
@@ -2156,7 +2179,7 @@
 <tr>
 	<td>Sesquicentennial Stadium</td>
 	<td>Philadelphia, PA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Philadelphia Municipal Stadium - Philadelphia, PA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Philadelphia Municipal Stadium - Philadelphia, PA</b></td>
 </tr>
 <tr>
 	<td>Sewanee Stadium</td>
@@ -2195,7 +2218,7 @@
 <tr>
 	<td>Sheib Field</td>
 	<td>Blacksburg, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Miles Field - Blacksburg, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Miles Field - Blacksburg, VA</b></td>
 </tr>
 <tr>
 	<td>Shimberg Field</td>
@@ -2238,7 +2261,7 @@
 	<td>* Largely demo'd c. 1970s, unused c. 1981-1995</td>
 </tr>
 <tr>
-	<td><a href="simmons-bank-liberty-stadium.html">Simmons Bank Liberty Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/simmons-bank-liberty-stadium.html">Simmons Bank Liberty Stadium</a></td>
 	<td>Memphis, TN</td>
 	<td>2-0</td>
 	<td>1965</td>
@@ -2248,7 +2271,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="sirrine-stadium.html">Sirrine Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/sirrine-stadium.html">Sirrine Stadium</a></td>
 	<td>Greenville, SC</td>
 	<td>3-0-2</td>
 	<td>1936</td>
@@ -2258,7 +2281,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="south-side-park.html">South Side Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/south-side-park.html">South Side Park</a></td>
 	<td>Winston-Salem, NC</td>
 	<td>1-0</td>
 	<td>1892</td>
@@ -2280,7 +2303,7 @@
 <tr>
 	<td>Spectrum Stadium</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>FBC Mortgage Stadium - Orlando, FL</b></td>
 </tr><!--
 <tr>
 	<td>Stanford Stadium</a></td>
@@ -2305,15 +2328,15 @@
 <tr>
 	<td>Sun Devil Stadium</td>
 	<td>Tempe, AZ</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Mountain America Stadium - Tempe, AZ</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Mountain America Stadium - Tempe, AZ</b></td>
 </tr>
 <tr>
 	<td>Sun Life Stadium</td>
 	<td>Miami Gardens, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Hard Rock Stadium - Miami Gardens, FL</b></td>
 </tr>
 <tr>
-	<td><a href="tate-field.html">Tate Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/tate-field.html">Tate Field</a></td>
 	<td>Richmond, VA</td>
 	<td>0-3</td>
 	<td>1890</td>
@@ -2335,17 +2358,17 @@
 <tr>
 	<td>Tangerine Bowl</td>
 	<td>Orlando, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Camping World Stadium - Orlando, FL</b></td>
 </tr>
 <tr>
 	<td>Texas Memorial Stadium</td>
 	<td>Austin, TX</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Darrel K. Royal-Texas Memorial Stadium - Austin, TX</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Darrel K. Royal-Texas Memorial Stadium - Austin, TX</b></td>
 </tr>
 <tr>
 	<td>TIAA Bank Field</td>
 	<td>Jacksonville, FL</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>EverBank Stadium - Jacksonville, FL</b></td>
 </tr>
 <tr>
 	<td>Trentini Stadium</td>
@@ -2360,7 +2383,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="trinity-park.html">Trinity Park</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/trinity-park.html">Trinity Park</a></td>
 	<td>Durham, NC</td>
 	<td>0-2</td>
 	<td>c. 1881</td>
@@ -2382,12 +2405,12 @@
 <tr>
 	<td>Trucker Stadium</td>
 	<td>Portsmouth, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Sewanee Stadium - Portsmouth, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Sewanee Stadium - Portsmouth, VA</b></td>
 </tr>
 <tr>
 	<td>Truist Field</td>
 	<td>Winston-Salem, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Allegacy Federal Credit Union Stadium - Winston-Salem, NC</b></td>
 </tr>
 <tr>
 	<td>Tulane Stadium</td>
@@ -2401,7 +2424,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="university-grounds.html">University Grounds</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/university-grounds.html">University Grounds</a></td>
 	<td>Greenville, SC</td>
 	<td>0-0-1</td>
 	<td>1852</td>
@@ -2411,9 +2434,9 @@
 	<td>No formal athletics pre-1889</td>
 </tr>
 <tr>
-	<td>University Polo Field</a></td>
+	<td>University Polo Field</td>
 	<td>Tucson, AZ</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Arizona Stadium - Tucson, AZ</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Arizona Stadium - Tucson, AZ</b></td>
 </tr>
 <tr>
 	<td>University of Detroit Stadium</td>
@@ -2430,23 +2453,23 @@
 	<td>1922</td>
 	<td>1968</td>
 	<td>1971</td>
-	<td bgcolor="gainsboro">Defunct</b></td>
+	<td bgcolor="gainsboro">Defunct</td>
 	<td>Parking lot 1971-1992; now Titan Field</td>
 </tr>
 <tr>
 	<td>University of Richmond Stadium</td>
 	<td>Richmond, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>City Stadium - Richmond, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>City Stadium - Richmond, VA</b></td>
 </tr>
 <tr>
 	<td>Vanderbilt Stadium</td>
 	<td>Nashville, TN</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>FirstBank Stadium - Nashville, TN</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>FirstBank Stadium - Nashville, TN</b></td>
 </tr>
 <tr>
 	<td>Varsity Field</td>
 	<td>Jacksonville, NC</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Liversedge Field - Jacksonville, NC</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Liversedge Field - Jacksonville, NC</b></td>
 </tr>
 <tr>
 	<td>Veterans Memorial Stadium</td>
@@ -2459,13 +2482,13 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="victory-stadium.html">Victory Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/victory-stadium.html">Victory Stadium</a></td>
 	<td>Roanoke, VA</td>
 	<td>2-0</td>
 	<td>1941</td>
 	<td>2006</td>
 	<td>2006</td>
-	<td bgcolor="gainsboro">Defunct</b></td>
+	<td bgcolor="gainsboro">Defunct</td>
 	<td bgcolor="thistle">Maher Field II (1943-pres.) to west; no bleachers 2006-2019</td>
 </tr>
 <tr>
@@ -2479,7 +2502,7 @@
 	<td>   </td>
 </tr>
 <tr>
-	<td><a href="wallace-wade-stadium.html">Wallace Wade Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/wallace-wade-stadium.html">Wallace Wade Stadium</a></td>
 	<td>Durham, NC</td>
 	<td>14-26-1</td>
 	<td>1929</td>
@@ -2491,7 +2514,7 @@
 <tr>
 	<td>War Memorial Stadium</td>
 	<td>Austin, TX</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Darrel K. Royal-Texas Memorial Stadium - Austin, TX</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Darrel K. Royal-Texas Memorial Stadium - Austin, TX</b></td>
 </tr>
 <tr>
 	<td>War Memorial Stadium</td>
@@ -2506,16 +2529,16 @@
 <tr>
 	<td>Washington Street Park</td>
 	<td>Portsmouth, VA</td>
-	<td colspan=6 bgcolor="aquamarine">See <b>Sewanee Stadium - Portsmouth, VA</b></td>
+	<td colspan="6" bgcolor="aquamarine">See <b>Sewanee Stadium - Portsmouth, VA</b></td>
 </tr>
 <tr>
-	<td><a href="wearn-field.html">Wearn Field</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/wearn-field.html">Wearn Field</a></td>
 	<td>Charlotte, NC</td>
 	<td>3-1-1</td>
 	<td>1912</td>
 	<td>1941</td>
 	<td>1942</td>
-	<td bgcolor="gainsboro">Defunct</b></td>
+	<td bgcolor="gainsboro">Defunct</td>
 	<td>   </td>
 </tr>
 <tr>
@@ -2529,7 +2552,7 @@
 	<td bgcolor="thistle">* JFK Stadium closed 1989, reopened 1996</td>
 </tr>
 <tr>
-	<td><a href="williams-brice-stadium.html">Williams-Brice Stadium</a></td>
+	<td><a href="https://cwclaib.github.io/football/locations/williams-brice-stadium.html">Williams-Brice Stadium</a></td>
 	<td>Columbia, SC</td>
 	<td>8-12-1</td>
 	<td>1934</td>
@@ -2652,7 +2675,1781 @@
 	<td>Open</td>
 	<td>   </td>
 </tr>
-</table>
+</tbody></table>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("table2");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+<table id="table2">
+<tbody><tr>
+	<th class="sorted" onclick="sortTable(0)">Field Name</th>
+	<th class="sorted" onclick="sortTable(1)">Location</th>
+	<th class="sorted" onclick="sortTable(2)">Record</th>
+	<th class="sorted" onclick="sortTable(3)">Opened</th>
+	<th class="sorted" onclick="sortTable(4)">Closed</th>
+	<th class="sorted" onclick="sortTable(5)">Demo'd</th>
+	<th class="sorted" onclick="sortTable(6)">Field Status</th>
+	<th>Comments</th>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/acrisure-stadium.html">Acrisure Stadium</a></td>
+	<td>Pittsburgh, PA</td>
+	<td>2-0</td>
+	<td>2001</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/allegacy-federal-credit-union-stadium.html">Allegacy Federal Credit Union Stadium</a></td>
+	<td>Winston-Salem, NC</td>
+	<td>15-14</td>
+	<td>1968</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/alumni-field-boston.html">Alumni Field</a></td>
+	<td>Chestnut Hill, MA</td>
+	<td>1-0</td>
+	<td>1915</td>
+	<td>1957</td>
+	<td>1957</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Alumni Stadium</b></td>
+	<td>Unused 1945-56 (except 1955)</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/alumni-stadium-boston.html">Alumni Stadium</a></td>
+	<td>Chestnut Hill, MA</td>
+	<td>3-6</td>
+	<td>1957</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/american-legion-memorial-stadium.html">American Legion Memorial Stadium</a></td>
+	<td>Charlotte, NC</td>
+	<td>5-6</td>
+	<td>1936</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/american-legion-stadium.html">American Legion Stadium</a></td>
+	<td>Wilmington, NC</td>
+	<td>1-0-1</td>
+	<td>1938 *</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>* Fully opened in 1940, but events preceeded</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/arizona-stadium.html">Arizona Stadium</a></td>
+	<td>Tucson, AZ</td>
+	<td>0-1</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">University Polo Field 1923-1928</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/astrodome.html">Astrodome</a></td>
+	<td>Houston, TX</td>
+	<td>1-0-1</td>
+	<td>1965</td>
+	<td>2008</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Abandoned since 2008; not (fully) demo'd</td>
+	<td>Partially demo'd 2013</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-field-wake-forest.html">Athletic Field</a></td>
+	<td>Wake Forest, NC</td>
+	<td>5-0</td>
+	<td>c. 1882</td>
+	<td>1922</td>
+	<td>   </td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Gore Field</b></td>
+	<td>Field of play remains undeveloped</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-atlanta.html">Athletic Park</a></td>
+	<td>Atlanta, GA</td>
+	<td>0-1</td>
+	<td>1894</td>
+	<td>1896</td>
+	<td>c. 1900</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-danville.html">Athletic Park</a></td>
+	<td>Danville, VA</td>
+	<td>1-0</td>
+	<td>c. 1880</td>
+	<td>1958</td>
+	<td>1958</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-greensboro.html">Athletic Park</a></td>
+	<td>Greensboro, NC</td>
+	<td>2-0</td>
+	<td>1893</td>
+	<td>1902</td>
+	<td>c. 1949</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-raleigh.html">Athletic Park</a></td>
+	<td>Raleigh, NC</td>
+	<td>4-2-1</td>
+	<td>1889</td>
+	<td>1897</td>
+	<td>1898</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>Limited games after abandonment</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-roanoke.html">Athletic Park</a></td>
+	<td>Roanoke, VA</td>
+	<td>1-0</td>
+	<td>1893</td>
+	<td>1906</td>
+	<td>1906</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Maher Field I</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/athletic-park-rock-hill.html">Athletic Park</a></td>
+	<td>Rock Hill, SC</td>
+	<td>0-1</td>
+	<td>1896</td>
+	<td>c. 1908</td>
+	<td>c. 1913</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/atlanta-fulton-county-stadium.html">Atlanta-Fulton County Stadium</a></td>
+	<td>Atlanta, GA</td>
+	<td>3-3</td>
+	<td>1965</td>
+	<td>1997</td>
+	<td>1997</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/bank-of-america-stadium.html">Bank of America Stadium</a></td>
+	<td>Charlotte, NC</td>
+	<td>3-7</td>
+	<td>1996</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/baujan-field.html">Baujan Field</a></td>
+	<td>Dayton, OH</td>
+	<td>1-0</td>
+	<td>1925</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/beaver-stadium.html">Beaver Stadium</a></td>
+	<td>State College, PA</td>
+	<td>1-8</td>
+	<td>1960</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/ben-hill-griffin-stadium.html">Ben Hill Griffin Stadium</a></td>
+	<td>Gainesville, FL</td>
+	<td>0-2</td>
+	<td>1930</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/bobby-dodd-stadium.html">Bobby Dodd Stadium</a></td>
+	<td>Atlanta, GA</td>
+	<td>4-12</td>
+	<td>1913</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/boulevard-field.html">Boulevard Field</a></td>
+	<td>Richmond, VA</td>
+	<td>1-0</td>
+	<td>1912</td>
+	<td>1922</td>
+	<td>c. 1938</td>
+	<td bgcolor="gainsboro">Abandoned c. 1926, now defunct</td>
+	<td bgcolor="thistle">Lee Park 1912-1916; no stands after 1922</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/bowman-field.html">Bowman Field</a></td>
+	<td>Clemson, SC</td>
+	<td>0-1</td>
+	<td>1896</td>
+	<td>1914</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/bowman-gray-stadium.html">Bowman Gray Stadium</a></td>
+	<td>Winston-Salem, NC</td>
+	<td>3-4</td>
+	<td>1937</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/broad-street-park-i.html">Broad Street Park (I)</a></td>
+	<td>Richmond, VA</td>
+	<td>1-1</td>
+	<td>1897</td>
+	<td>1912</td>
+	<td>1912</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Broad Street Park (II)</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/broad-street-park-ii.html">Broad Street Park (II)</a></td>
+	<td>Richmond, VA</td>
+	<td>0-1</td>
+	<td>1913</td>
+	<td>1917</td>
+	<td>1937</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Boulevard Field</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/bryant-denny-stadium.html">Bryant-Denny Stadium</a></td>
+	<td>Tuscaloosa, AL</td>
+	<td>0-4</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Byrd Stadium I</td>
+	<td>College Park, MD</td>
+	<td>0-0-2</td>
+	<td>1923</td>
+	<td>1949</td>
+	<td>1953</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>SECU Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/california-memorial-stadium.html">California Memorial Stadium</a></td>
+	<td>Berkeley, CA</td>
+	<td>1-0</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/camp-davis-athletic-field.html">Camp Davis Athletic Field</a></td>
+	<td>Holly Ridge, NC</td>
+	<td>0-1</td>
+	<td>1943</td>
+	<td>1945</td>
+	<td>c. 1946</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/camping-world-stadium.html">Camping World Stadium</a></td>
+	<td>Orlando, FL</td>
+	<td>3-2</td>
+	<td>1936</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/old-campus-athletic-field.html">Campus Athletic Field I</a></td>
+	<td>Chapel Hill, NC</td>
+	<td>0-7</td>
+	<td>c. 1888</td>
+	<td>1899</td>
+	<td>1899</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Campus Athletic Field II</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Cardinal Stadium I</td>
+	<td>Louisville, KY</td>
+	<td>0-1</td>
+	<td>1956</td>
+	<td>2014</td>
+	<td>2019</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>L&amp;N FCU Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/carter-finley-stadium.html">Carter-Finley Stadium</a></td>
+	<td>Raleigh, NC</td>
+	<td>241-126-6</td>
+	<td>1966</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/central-carolina-fair-grounds.html">Central Carolina Fair Grounds</a></td>
+	<td>Greensboro, NC</td>
+	<td>1-1</td>
+	<td>1900</td>
+	<td>1958</td>
+	<td>1958</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>No documented football after 1901</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/central-high-school-field-charlotte.html">Central High School Field</a></td>
+	<td>Charlotte, NC</td>
+	<td>1-2</td>
+	<td>1929</td>
+	<td>c. 1937</td>
+	<td>1960</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/chamberlain-field.html">Chamberlain Field</a></td>
+	<td>Chattanooga, TN</td>
+	<td>1-0</td>
+	<td>1908</td>
+	<td>1997</td>
+	<td>2005 *</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td bgcolor="thistle">Major reno. in 1927; * Completed 2011</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/city-stadium-lynchburg.html">City Stadium</a></td>
+	<td>Lynchburg, VA</td>
+	<td>0-0</td>
+	<td>1894</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td bgcolor="thistle">City Stadium opened on Fair Grounds in 1939</td>
+	<!-- https://en.wikipedia.org/wiki/City_Stadium_(Lynchburg) -->
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/city-stadium.html">City Stadium</a></td>
+	<td>Richmond, VA</td>
+	<td>3-1</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/cone-athletic-park.html">Cone Athletic Park</a></td>
+	<td>Greensboro, NC</td>
+	<td>0-1</td>
+	<td>1902</td>
+	<td>1906</td>
+	<td>1906</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/cotton-bowl.html">Cotton Bowl</a></td>
+	<td>Dallas, TX</td>
+	<td>0-1</td>
+	<td>1886 *</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">* Arguably four venues, starting 1886, 1903, 1921, 1930</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/curry-field.html">Curry Field</a></td>
+	<!--     # https://v3.lib.virginia.edu/sources/uva_library/items/u126747?idx=24&x=1.21&y=0.616&zoom=0.789&page=218 Old Dudley Field (check dates)-->
+	<td>Nashville, TN</td>
+	<td>0-0</td>
+	<td>1892</td>
+	<td>1922</td>
+	<td>1961</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>FirstBank Stadium</b></td>
+	<td bgcolor="thistle">Intramural use 1930-1960; Portion of field remains</td>
+</tr>
+<tr>
+	<td>Darrell K. Royal-Texas Memorial Stadium</td>
+	<td>Austin, TX</td>
+	<td>1-0</td>
+	<td>1924</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/davis-field.html">Davis Field</a></td>
+	<td>Columbia, SC</td>
+	<td>0-2</td>
+	<td>c. 1897</td>
+	<td>c. 1952</td>
+	<td>1965</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/davis-wade-stadium.html">Davis Wade Stadium</a></td>
+	<td>Starkville, MS</td>
+	<td>1-1</td>
+	<td>1914</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/doak-campbell-stadium.html">Doak Campbell Stadium</a></td>
+	<td>Tallahassee, FL</td>
+	<td>6-12</td>
+	<td>1950</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/dowdy-ficklen-stadium.html">Dowdy-Ficklen Stadium</a></td>
+	<td>Greenville, NC</td>
+	<td>2-3</td>
+	<td>1963</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Ebbets Field</td>
+	<td>Brooklyn, NY</td>
+	<td>1-2</td>
+	<td>1913</td>
+	<td>1958</td>
+	<td>1960</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Alumni Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/emerson-field.html">Emerson Field</a></td>
+	<td>Chapel Hill, NC</td>
+	<td>0-2-1</td>
+	<td>1900</td>
+	<td>1965 *</td>
+	<td>1967</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Kenan Memorial Stadium</b></td>
+	<td bgcolor="thistle">* CAF II closed 1914, reopened 1916 as Emerson Field</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/everbank-stadium.html">EverBank Stadium</a></td>
+	<td>Jacksonville, FL</td>
+	<td>1-5</td>
+	<td>1924</td>
+	<td>   </td>
+	<td> </td>
+	<td>Open</td>
+	<td bgcolor="thistle">New stadiums 1926 and 1995</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-columbia-i.html">Fair Grounds I</a></td>
+	<td>Columbia, SC</td>
+	<td>0-1</td>
+	<td>1856</td>
+	<td>1903</td>
+	<td>1913</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Fair Grounds II</b></td>
+	<td bgcolor="thistle">Closed 1862-1868. Fair Grounds relocated 1903</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-columbia-ii.html">Fair Grounds II</a></td>
+	<td>Columbia, SC</td>
+	<td>0-0-1</td>
+	<td>1904</td>
+	<td>1934</td>
+	<td>1934</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td bgcolor="thistle">Baseball field Spring of 1934</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/fair-grounds-raleigh.html">Fair Grounds II</a></td>
+	<td>Raleigh, NC</td>
+	<td>14-7-5</td>
+	<td>1873</td>
+	<td>1925</td>
+	<td>1925</td>
+	<td bgcolor="gainsboro">Defunct; replaced by Fair Grounds III</td>
+	<td bgcolor="thistle">Field relocated in 1922</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/fairview-park.html">Fairview Park</a></td>
+	<td>Winston-Salem, NC</td>
+	<td>1-0</td>
+	<td>1905</td>
+	<td>1908</td>
+	<td>1909</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Farragut Field</td>
+	<td>Annapolis, MD</td>
+	<td>1-3</td>
+	<td>1911</td>
+	<td>1958</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>FBC Mortgage Stadium</td>
+	<td>Orlando, FL</td>
+	<td>1-0</td>
+	<td>2007</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Fenway Park</td>
+	<td>Boston, MA</td>
+	<td>0-1</td>
+	<td>1912</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/firstbank-stadium.html">FirstBank Stadium</a></td>
+	<td>Nashville, TN</td>
+	<td>0-1</td>
+	<td>1922</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Fitton Field</td>
+	<td>Worcester, MA</td>
+	<td>0-1</td>
+	<td>1908</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Floyd Casey Stadium</td>
+	<td>Waco, TX</td>
+	<td>0-1</td>
+	<td>1950</td>
+	<td>2013</td>
+	<td>2016</td>
+	<td bgcolor="gainsboro">Defunct; replaced by McLane Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Forbes Stadium</td>
+	<td>Pittsburgh, PA</td>
+	<td>1-0</td>
+	<td>1909</td>
+	<td>1970</td>
+	<td>1971</td>
+	<td bgcolor="gainsboro">Defunct; replaced by Three Rivers Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/foster-stadium.html">Foster Stadium</a></td>
+	<td>Lexington, VA</td>
+	<td>1-1</td>
+	<td>1921</td>
+	<td> * </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">* Some consider 1961 reno. separate field</td>
+</tr>
+<tr>
+	<td>Franklin Field</td>
+	<td>Philadelphia, PA</td>
+	<td>0-2</td>
+	<td>1895</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>George Washington High School Stadium</td>
+	<td>Alexandria, VA</td>
+	<td>0-1</td>
+	<td>1937</td>
+	<td>1977</td>
+	<td>1980</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Georgetown Field</td>
+	<td>Washington, DC</td>
+	<td>0-2-1</td>
+	<td>1894</td>
+	<td>1929</td>
+	<td>1931</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Georgia Dome</td>
+	<td>Atlanta, GA</td>
+	<td>1-1</td>
+	<td>1992</td>
+	<td>2017</td>
+	<td>2017</td>
+	<td bgcolor="gainsboro">Defunct; replaced by Mercedes-Benz Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Gerald J. Ford Stadium</td>
+	<td>Dallas, TX</td>
+	<td>1-0</td>
+	<td>2000</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Giants Stadium</td>
+	<td>East Rutherford, NJ</td>
+	<td>1-0</td>
+	<td>1976</td>
+	<td>2010</td>
+	<td>2010</td>
+	<td bgcolor="gainsboro">Defunct; replaced by MetLife Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Gore Field</td>
+	<td>Wake Forest, NC</td>
+	<td>2-0-1</td>
+	<td>1922</td>
+	<td>1956</td>
+	<td>   </td>
+	<td bgcolor="gainsboro">Defunct; partially replaced by Groves Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Griffith Stadium</td>
+	<td>Washington, DC</td>
+	<td>0-5</td>
+	<td>1891</td>
+	<td>1961</td>
+	<td>1965</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td bgcolor="thistle">Boundary Field burnt down 1911</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/hard-rock-stadium.html">Hard Rock Stadium</a></td>
+	<td>Miami Gardens, FL</td>
+	<td>1-3</td>
+	<td>1987</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Herty Field</td>
+	<td>Athens, GA</td>
+	<td>0-0</td>
+	<td>1891</td>
+	<td>1940</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>Stands removed 1911</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/hilton-park.html">Hilton Park</a></td>
+	<td>Wilmington, NC</td>
+	<td>1-0</td>
+	<td>1881</td>
+	<td>c. 1943</td>
+	<td>c. 1943</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>Possibly unused c. 1920-1940</td>
+</tr>
+<tr>
+	<td>Independence Stadium</td>
+	<td>Shreveport, LA</td>
+	<td>1-0</td>
+	<td>1924</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/jack-katz-stadium.html">Jack Katz Stadium</a></td>
+	<td>Durham, NC</td>
+	<td>2-0</td>
+	<td>1911 *</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>* Not formally opened til 1915</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/JMA-wireless-dome.html">JMA Wireless Dome</a></td>
+	<td>Syracuse, NY</td>
+	<td>6-2</td>
+	<td>1907</td>
+	<td> * </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">* Archbold closed 1978, reopened 1980 as Carrier Dome</td>
+</tr>
+<tr>
+	<td>Joan C. Edwards Stadium</td>
+	<td>Huntington, WV</td>
+	<td>1-0</td>
+	<td>1991</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Johnson Hagood Stadium</td>
+	<td>Charleston, SC</td>
+	<td>1-0</td>
+	<td>1927</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">Reoriented 1948</td>
+</tr>
+<tr>
+	<td>Jones AT&amp;T Stadium</td>
+	<td>Lubbock, TX</td>
+	<td>2-1</td>
+	<td>1947</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/jordan-hare-stadium.html">Jordan-Hare Stadium</a></td>
+	<td>Auburn, AL</td>
+	<td>1-1</td>
+	<td>1939</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/kenan-memorial-stadium.html">Kenan Memorial Stadium</a></td>
+	<td>Chapel Hill, NC</td>
+	<td>23-29-1</td>
+	<td>1927</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Kinnick Stadium</td>
+	<td>Iowa City, IA</td>
+	<td>1-0</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/cardinal-stadium.html">L&amp;N Federal Credit Union Stadium</a></td>
+	<td>Louisville, KY</td>
+	<td>1-3</td>
+	<td>1998</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Ladd-Peebles Stadium</td>
+	<td>Mobile, AL</td>
+	<td>2-3</td>
+	<td>1948</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/lafayette-field.html">Lafayette Field</a></td>
+	<td>Norfolk, VA</td>
+	<td>4-3</td>
+	<td>1902</td>
+	<td>1913</td>
+	<td>1913</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>League Park</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Lambeth Field</td>
+	<td>Charlottesville, VA</td>
+	<td>0-2-1</td>
+	<td>1902</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/lane-stadium.html">Lane Stadium</a></td>
+	<td>Blacksburg, VA</td>
+	<td>2-4-1</td>
+	<td>1965</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/latta-park-i.html">Latta Park I</a></td>
+	<td>Charlotte, NC</td>
+	<td>1-1-2</td>
+	<td>1870</td>
+	<td>1908</td>
+	<td>1912</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Latta Park II</b></td>
+	<td bgcolor="thistle">Mecklenburg Fairgrounds 1870-1890</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/latta-park-ii.html">Latta Park II</a></td>
+	<td>Charlotte, NC</td>
+	<td>1-0</td>
+	<td>1908</td>
+	<td>1912</td>
+	<td>1912</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Wearn Field</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/league-park.html">League Park III</a></td>
+	<td>Norfolk, VA</td>
+	<td>3-9-1</td>
+	<td>1913</td>
+	<td>1940</td>
+	<td>1940</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>    </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/legion-field.html">Legion Field</a></td>
+	<td>Birmingham, AL</td>
+	<td>1-1</td>
+	<td>1927</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Liversedge Field</td>
+	<td>Jacksonville, NC</td>
+	<td>0-0 *</td>
+	<td>1943</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>* 1-0 in unofficial pre-season game</td>
+</tr>
+<tr>
+	<td>Los Angeles Memorial Coliseum</td>
+	<td>Los Angeles, CA</td>
+	<td>0-2</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>M. M. Roberts Stadium</td>
+	<td>Hattiesburg, MS</td>
+	<td>2-1</td>
+	<td>1932</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/maher-field.html">Maher Field</a></td>
+	<td>Roanoke, VA</td>
+	<td>1-1</td>
+	<td>1906</td>
+	<td>1941</td>
+	<td>1941</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Victory Stadium - Roanoke, VA</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/manly-field.html">Manly Field</a></td>
+	<td>Greenville, SC</td>
+	<td>0-1</td>
+	<td>1919</td>
+	<td>1968</td>
+	<td>1968</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Sirrine Stadium</b></td>
+	<td>No confirmed athletics after 1965</td>
+</tr>
+<tr>
+	<td>McLean Stadium</td>
+	<td>Lexington, KY</td>
+	<td>0-2</td>
+	<td>1880</td>
+	<td>1972</td>
+	<td>2018</td>
+	<td bgcolor="gainsboro">Defunct; replaced by Kroger Field</td>
+	<td bgcolor="thistle">Athletic Field 1880-1915. No athletics 1973-2018</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/melton-field.html">Melton Field</a></td>
+	<td>Columbia, SC</td>
+	<td>1-4</td>
+	<td>1924</td>
+	<td>1954</td>
+	<td>1954</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Williams-Brice Stadium</b></td>
+	<td bgcolor="thistle">Practice field 1924-1925, 1934-1954</td>
+</tr>
+<tr>
+	<td>Memorial Stadium</td>
+	<td>Asheville, NC</td>
+	<td>0-1</td>
+	<td>1925</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Memorial Stadium</td>
+	<td>Bloomington, IN</td>
+	<td>2-0</td>
+	<td>1960</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/memorial-stadium-clemson.html">Memorial Stadium</a></td>
+	<td>Clemson, SC</td>
+	<td>11-25</td>
+	<td>1942</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Memorial Stadium</td>
+	<td>Lincoln, NE</td>
+	<td>0-2</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Miami Orange Bowl</td>
+	<td>Miami, FL</td>
+	<td>4-4-1</td>
+	<td>1937</td>
+	<td>2008</td>
+	<td>2008</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Hard Rock Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Michie Stadium</td>
+	<td>West Point, NY</td>
+	<td>0-1</td>
+	<td>1924</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Milan Puskar Stadium</td>
+	<td>Morgantown, WV</td>
+	<td>0-1</td>
+	<td>1980</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/miles-field.html">Miles Field</a></td>
+	<td>Blacksburg, VA</td>
+	<td>0-2-1</td>
+	<td>1894</td>
+	<td>1926</td>
+	<td>1928</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Miles Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/miles-stadium.html">Miles Stadium</a></td>
+	<td>Blacksburg, VA</td>
+	<td>1-4</td>
+	<td>1926</td>
+	<td>1964</td>
+	<td>1964</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Lane Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Mitchell Stadium</td>
+	<td>Bluefield, WV</td>
+	<td>0-1</td>
+	<td>1936</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Mountain America Stadium</td>
+	<td>Tempe, AZ</td>
+	<td>1-1</td>
+	<td>1958</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Mountaineer Field</td>
+	<td>Morgantown, WV</td>
+	<td>1-1</td>
+	<td>1924</td>
+	<td>1979</td>
+	<td>1987</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Milan Pusker Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Navy-Marine Corps Memorial Stadium</td>
+	<td>Annapolis, MD</td>
+	<td>1-1</td>
+	<td>1959</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/new-beaver-field.html">New Beaver Field</a></td>
+	<td>State College, PA</td>
+	<td>0-5</td>
+	<td>1909</td>
+	<td>1959</td>
+	<td>1959</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Beaver Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/nickerson-field.html">Nickerson Field</a></td>
+	<td>Boston, MA</td>
+	<td>1-0</td>
+	<td>1915</td>
+	<td> * </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td bgcolor="thistle">* Some consider separate field after 1955/1959 reno's.</td>
+</tr>
+<tr>
+	<td>Nippert Stadium</td>
+	<td>Cincinnati, OH</td>
+	<td>0-1</td>
+	<td>1901</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">Carson Field 1901-1924</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/nissan-stadium.html">Nissan Stadium</a></td>
+	<td>Nashville, TN</td>
+	<td>0-1</td>
+	<td>1999</td>
+	<td><span style="color:red;"><i><b>2027</b></i></span></td>
+	<td><span style="color:red;"><i><b>2027</b></i></span></td>
+	<td>Open</td>
+	<td>New Nissan Stadium planned 2027</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/norfolk-athletic-park.html">Norfolk Athletic Park</a></td>
+	<td>Norfolk, VA</td>
+	<td>0-1</td>
+	<td>1908</td>
+	<td>1912</td>
+	<td>1912</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>League Park</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Notre Dame Stadium</td>
+	<td>South Bend, IN</td>
+	<td>0-2</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Ohio Stadium</td>
+	<td>Columbus, OH</td>
+	<td>0-1</td>
+	<td>1922</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Oklahoma Memorial Stadium</td>
+	<td>Norman, OK</td>
+	<td>0-1</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Oriole Park V</td>
+	<td>Baltimore, MD</td>
+	<td>0-0-1</td>
+	<td>1914</td>
+	<td>1944</td>
+	<td>1944</td>
+	<td bgcolor="gainsboro">Defunct; replaced by Baltimore Memorial Stadium</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/parade-ground-vmi.html">Parade Ground</a></td>
+	<td>Lexington, VA</td>
+	<td>3-3</td>
+	<td>1839</td>
+	<td>1921</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td bgcolor="thistle">Burnt down 1864.  Expanded often, relocated 1913</td>
+</tr>
+<tr>
+	<td>Parkway Field</td>
+	<td>Louisville, KY</td>
+	<td>0-1</td>
+	<td>1923</td>
+	<td>1998</td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>Stands removed c. 1998</td>
+</tr>
+<tr>
+	<td>Pee Dee Fairgrounds</td>
+	<td>Florence, SC</td>
+	<td>0-2</td>
+	<td>1915</td>
+	<td>1950</td>
+	<td>c. 1954</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>Sports not held after c. 1941</td>
+</tr>
+<tr>
+	<td>Pepin Stadium</td>
+	<td>Tampa, FL</td>
+	<td>2-2</td>
+	<td>1899</td>
+	<td> * </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td bgcolor="thistle">* Original portions demo'd 1983, 2003</td>
+</tr>
+<tr>
+	<td>Petco Park</td>
+	<td>San Diego, CA</td>
+	<td>0-0</td>
+	<td>2004</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Piedmont Park</td>
+	<td>Atlanta, GA</td>
+	<td>0-0</td>
+	<td>1892</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Pitt Stadium</td>
+	<td>Pittsburgh, PA</td>
+	<td>0-4</td>
+	<td>1925</td>
+	<td>1999</td>
+	<td>1999</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Acrisure Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/playing-fields-oak-ridge.html">Playing Fields</a></td>
+	<td>Oak Ridge, NC</td>
+	<td>2-0</td>
+	<td>c. 1891</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/pullen-park.html">Pullen Park</a></td>
+	<td>Raleigh, NC</td>
+	<td>0-1</td>
+	<td>1900 *</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>* Games in 1896 &amp; 1898 preceded present park</td>
+</tr>
+<tr>
+	<td>Raymond James Stadium</td>
+	<td>Tampa, FL</td>
+	<td>1-0</td>
+	<td>1998</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Rentschler Field</td>
+	<td>East Hartford, CT</td>
+	<td>2-0</td>
+	<td>2003</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Richardson Field</td>
+	<td>Davidson, NC</td>
+	<td>0-1</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/riddick-field.html">Riddick Field</a></td>
+	<td>Raleigh, NC</td>
+	<td>131-92-17</td>
+	<td>1906</td>
+	<td>1967 *</td>
+	<td>1968 **</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Carter-Finley Stadium</b></td>
+	<td>* Non-college only 1966-67; ** Completed 2013</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/riggs-field.html">Riggs Field</a></td>
+	<td>Clemson, SC</td>
+	<td>0-2</td>
+	<td>1915</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>Football moved venues 1941</td>
+</tr>
+<tr>
+	<td>Ross-Ade Stadium</td>
+	<td>West Lafayette, IN</td>
+	<td>0-1</td>
+	<td>1924</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>S.B. Ballard Stadium</td>
+	<td>Norfolk, VA</td>
+	<td>10-4</td>
+	<td>1936</td>
+	<td> * </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">Foreman Field 1936-2009</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/sal-hall-stadium.html">Sal Hall Stadium</a></td>
+	<td>Washington, DC</td>
+	<td>1-0</td>
+	<td>1917</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Sandhill Fair Grounds</td>
+	<td>Pinehurst, NC</td>
+	<td>0-0-1</td>
+	<td>1915</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>Held at (and aka) Pinehurst Harness Track</td>
+</tr>
+<tr>
+	<td>Sanford Stadium</td>
+	<td>Athens, GA</td>
+	<td>0-5-1</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/scott-stadium.html">Scott Stadium</a></td>
+	<td>Charlottesville, VA</td>
+	<td>17-9</td>
+	<td>1931</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>SECU Stadium</td>
+	<td>College Park, MD</td>
+	<td>13-18</td>
+	<td>1950</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Sewanee Stadium</td>
+	<td>Portsmouth, VA</td>
+	<td>1-1</td>
+	<td>1918</td>
+	<td>1946</td>
+	<td>c. 1951</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>Proffesional sports left 1940</td>
+</tr>
+<tr>
+	<td>Shimberg Field</td>
+	<td>Tampa, FL</td>
+	<td>1-0</td>
+	<td>1937</td>
+	<td> * </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>* Largely demo'd c. 1970s, unused c. 1981-1995</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/simmons-bank-liberty-stadium.html">Simmons Bank Liberty Stadium</a></td>
+	<td>Memphis, TN</td>
+	<td>2-0</td>
+	<td>1965</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/sirrine-stadium.html">Sirrine Stadium</a></td>
+	<td>Greenville, SC</td>
+	<td>3-0-2</td>
+	<td>1936</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/south-side-park.html">South Side Park</a></td>
+	<td>Winston-Salem, NC</td>
+	<td>1-0</td>
+	<td>1892</td>
+	<td>c. 1912</td>
+	<td>c. 1912</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Spartan Stadium</td>
+	<td>East Lansing, MI</td>
+	<td>0-4</td>
+	<td>1923</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Sun Bowl Stadium</td>
+	<td>El Paso, TX</td>
+	<td>1-0</td>
+	<td>1963</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/tate-field.html">Tate Field</a></td>
+	<td>Richmond, VA</td>
+	<td>0-3</td>
+	<td>1890</td>
+	<td>1941</td>
+	<td>c. 1944</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td bgcolor="thistle">Closed c. 1897-1921</td>
+</tr>
+<tr>
+	<td>Tampa Stadium</td>
+	<td>Tampa, FL</td>
+	<td>0-1</td>
+	<td>1967</td>
+	<td>1998</td>
+	<td>1999</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Raymond James Stadium</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Trentini Stadium</td>
+	<!-- https://www.newspapers.com/image/935163992/?terms=%22faculty%20avenue%22&match=1 -->
+	<!-- https://www.newspapers.com/image/617700524/?match=1&terms=%22new%20bleachers%22 -->
+	<td>Wake Forest, NC</td>
+	<td>1-3-1</td>
+	<td>1940</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/trinity-park.html">Trinity Park</a></td>
+	<td>Durham, NC</td>
+	<td>0-2</td>
+	<td>c. 1881</td>
+	<td>1925</td>
+	<td>1925</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Jack Katz Stadium</b></td>
+	<td bgcolor="thistle">Blackwell's Park c. 1881-1892</td>
+</tr>
+<tr>
+	<td>Tropicana Field</td>
+	<td>St. Petersburg, FL</td>
+	<td>1-0</td>
+	<td>1990</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Tulane Stadium</td>
+	<td>New Orleans, LA</td>
+	<td>0-1</td>
+	<td>1926</td>
+	<td>1979</td>
+	<td>1979</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/university-grounds.html">University Grounds</a></td>
+	<td>Greenville, SC</td>
+	<td>0-0-1</td>
+	<td>1852</td>
+	<td>1919</td>
+	<td>1968</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Manly Field</b></td>
+	<td>No formal athletics pre-1889</td>
+</tr>
+<tr>
+	<td>University of Detroit Stadium</td>
+	<td>Detroit, MI</td>
+	<td>0-1</td>
+	<td>1922</td>
+	<td>1968</td>
+	<td>1971</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>Parking lot 1971-1992; now Titan Field</td>
+</tr>
+<tr>
+	<td>Veterans Memorial Stadium</td>
+	<td>Troy, AL</td>
+	<td>0-0</td>
+	<td>1950</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/victory-stadium.html">Victory Stadium</a></td>
+	<td>Roanoke, VA</td>
+	<td>2-0</td>
+	<td>1941</td>
+	<td>2006</td>
+	<td>2006</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td bgcolor="thistle">Maher Field II (1943-pres.) to west; no bleachers 2006-2019</td>
+</tr>
+<tr>
+	<td>Villanova Stadium</td>
+	<td>Bryn Mawr, PA</td>
+	<td>1-0</td>
+	<td>1927</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/wallace-wade-stadium.html">Wallace Wade Stadium</a></td>
+	<td>Durham, NC</td>
+	<td>14-26-1</td>
+	<td>1929</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>War Memorial Stadium</td>
+	<td>Laramie, WY</td>
+	<td>0-1</td>
+	<td>1950</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/wearn-field.html">Wearn Field</a></td>
+	<td>Charlotte, NC</td>
+	<td>3-1-1</td>
+	<td>1912</td>
+	<td>1941</td>
+	<td>1942</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Wells Fargo Center</td>
+	<td>Philadelphia, PA</td>
+	<td>0-1</td>
+	<td>1926</td>
+	<td> * </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">* JFK Stadium closed 1989, reopened 1996</td>
+</tr>
+<tr>
+	<td><a href="https://cwclaib.github.io/football/locations/williams-brice-stadium.html">Williams-Brice Stadium</a></td>
+	<td>Columbia, SC</td>
+	<td>8-12-1</td>
+	<td>1934</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Wilson Field</td>
+	<td>Lexington, VA</td>
+	<td>2-4-1</td>
+	<td>1895</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td bgcolor="thistle">Some consider 3 venues, starting 1895, 1924, and 2008</td>
+</tr>
+<tr>
+	<td>Worden Field</td>
+	<td>Annapolis, MD</td>
+	<td>1-3</td>
+	<td>c. 1890</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="LemonChiffon">Field remains, but hosts no sports</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>World War Memorial Stadium</td>
+	<td>Greensboro, NC</td>
+	<td>7-1-1</td>
+	<td>1926</td>
+	<td>   </td>
+	<td>   </td>
+	<td bgcolor="coral">Open; no longer active college football venue</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>WVU Athletic Field</td>
+	<td>Morgantown, WV</td>
+	<td>0-1</td>
+	<td>c. 1905<!-- no confirmation, date via facebook post GaWgF6bwXKwLxoGi/ --></td>
+	<td>1923</td>
+	<td>1923</td>
+	<td bgcolor="gainsboro">Defunct; replaced by <b>Mountaineer Field</b></td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Yankee Stadium</td>
+	<td>New York, NY</td>
+	<td>0-1</td>
+	<td>1923</td>
+	<td>2008</td>
+	<td>2009</td>
+	<td bgcolor="gainsboro">Defunct</td>
+	<td>   </td>
+</tr>
+<tr>
+	<td>Zable Stadium</td>
+	<td>Williamsburg, VA</td>
+	<td>1-4</td>
+	<td>1934</td>
+	<td>   </td>
+	<td>   </td>
+	<td>Open</td>
+	<td>   </td>
+</tr>
+</tbody></table>
 
 <br>
 
@@ -2660,5 +4457,5 @@
 
 <center><p><i>Last updated: 10/10/2025</i></p></center>
 
-</body>
-</html>
+
+</center></body></html>
