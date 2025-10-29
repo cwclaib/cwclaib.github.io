@@ -90,6 +90,10 @@ tr.uncounted {
         -ms-filter: "FlipH";
 }
 
+th.sorted:hover {
+  cursor: pointer;
+}
+
 
 /* figure{
 	transition: transform .2s;
